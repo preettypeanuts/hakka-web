@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "title": "Logistics Services",
+    "description": "Complete logistics solutions including sea freight, air freight, trucking, and customs handling."
+  },
+
+  "services": {
+    "items": [
+      {
+        "title": "Sea Freight",
+        "desc": "Large-scale ocean freight solutions for cost-efficient shipping.",
+        "benefit": "More cost-effective for high-volume shipments."
+      },
+      {
+        "title": "Air Freight",
+        "desc": "Fast shipping solutions for urgent and high-value goods.",
+        "benefit": "Shorter lead time with higher security."
+      },
+      {
+        "title": "Export & Import Handling",
+        "desc": "Complete documentation and customs clearance services.",
+        "benefit": "Faster process with reduced administrative risks."
+      },
+      {
+        "title": "Warehouse",
+        "desc": "Well-managed storage facilities with structured inventory systems.",
+        "benefit": "Improved storage security and distribution efficiency."
+      }
+    ]
+  },
+
+  "workflow": {
+    "title": "How We Work",
+    "steps": [
+      "Initial Consultation",
+      "Strategic Planning",
+      "Execution & Monitoring",
+      "Reporting & Evaluation"
+    ]
+  }
+}

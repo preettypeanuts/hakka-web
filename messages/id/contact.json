@@ -1,0 +1,38 @@
+{
+    "seo": {
+        "title": "Hubungi Kami",
+        "description": "Diskusikan kebutuhan logistik Anda."
+    },
+    "contact": {
+        "head_office": "Jakarta - PIK",
+        "email": "info@hht-logistics.com",
+        "phone": "+62 8xxx xxxx xxxx",
+        "cities": [
+            "Medan",
+            "Batam",
+            "Surabaya",
+            "Makassar"
+        ]
+    },
+    "form": {
+        "fields": [
+            "Nama Lengkap",
+            "Nama Perusahaan",
+            "Email",
+            "WhatsApp",
+            "Jenis Layanan",
+            "Deskripsi"
+        ],
+        "cta": "Kirim"
+    },
+    "faq": [
+        {
+            "q": "Apakah melayani seluruh Indonesia?",
+            "a": "Ya, kami memiliki jaringan nasional."
+        },
+        {
+            "q": "Apakah bisa ekspor impor?",
+            "a": "Bisa, termasuk PPJK."
+        }
+    ]
+}

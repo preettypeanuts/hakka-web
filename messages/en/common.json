@@ -1,0 +1,32 @@
+{
+  "navbar": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "cta": {
+      "contact": "Contact Us"
+    }
+  },
+  "footer": {
+    "tagline": "Integrated logistics solutions for efficient and measurable business operations.",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Golf Island Commercial Block J No. 55-56, Pantai Indah Kapuk, North Jakarta",
+      "email": "info@hht-logistics.com",
+      "phone": "+62 8xxx xxxx xxxx"
+    },
+    "legal": {
+      "copyright": "© 2026 Hakka Hydro Tirta. All rights reserved."
+    }
+  }
+}

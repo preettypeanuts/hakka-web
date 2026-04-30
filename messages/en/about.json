@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "title": "About Us | Hakka Hydro Tirta Logistics",
+    "description": "A trusted logistics company with extensive network and integrated solutions across Indonesia."
+  },
+
+  "origin": {
+    "title": "Our Origin Story",
+    "paragraph": "Founded in 2020 in Jakarta, PT Hakka Hydro Tirta started as a small initiative to build more structured and reliable logistics services. Over time, it has grown into a trusted logistics partner for both national and international companies. With operational networks across major cities such as Jakarta, Surabaya, Semarang, Makassar, and Batam, we bridge complex logistics needs with efficient and measurable solutions. We believe logistics is not just about delivery, but about keeping business flows running without disruption."
+  },
+
+  "vision_mission": {
+    "vision_title": "Vision",
+    "vision": "To become a leading logistics company in Indonesia with comprehensive nationwide coverage.",
+
+    "mission_title": "Mission",
+    "mission": "To deliver integrated logistics solutions through strategic approaches, deep industry understanding, and precise execution."
+  },
+
+  "values": {
+    "title": "Core Values",
+    "items": [
+      {
+        "title": "Integrity",
+        "desc": "We operate with full transparency and accountability in every process."
+      },
+      {
+        "title": "Reliability",
+        "desc": "Our commitment is to ensure every shipment is delivered as planned."
+      },
+      {
+        "title": "Efficiency",
+        "desc": "We continuously optimize time and operational costs for our clients."
+      },
+      {
+        "title": "Partnership",
+        "desc": "We build long-term relationships, not just transactions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+    "hero": {
+        "title": "Integrated Logistics Solutions for More Efficient Operations",
+        "cta_primary": "Consult Your Needs",
+        "cta_secondary": "Explore",
+        "desc": "From export to domestic distribution, we help your company move faster with a structured, transparent and reliable logistics system."
+    },
+    "origin": {
+        "label": "The Origin Story",
+        "paragraph_start": "Founded in 2020 in Jakarta, PT Hakka Hydro Tirta rapidly grew from a startup into a trusted logistics partner for national and international companies, with an operational network across major cities including",
+        "paragraph_end": "and a commitment to delivering efficient, measurable logistics solutions that keep our clients' business flowing without disruption."
+    },
+    "badges": {
+        "items": [
+            {
+                "number": "100",
+                "title": "Successful Shipments",
+                "description": "Handled hundreds of intercity and inter-island shipments with structured processes and minimal issues."
+            },
+            {
+                "number": "50",
+                "title": "Corporate Clients",
+                "description": "Trusted by companies across manufacturing, FMCG, and technology sectors for their logistics needs."
+            },
+            {
+                "number": "10",
+                "title": "Operational Cities",
+                "description": "Operational networks spread across strategic cities to ensure faster and more efficient distribution."
+            }
+        ]
+    },
+    "services": {
+        "title": "Featured Services",
+        "subtitle": "Our core services to support your business logistics needs.",
+        "cta": "Consult",
+        "wa_template": "Hello, I'm interested in the {title} service. Could you provide more details?",
+        "items": [
+            {
+                "title": "Sea Freight",
+                "description": "Ocean shipping solutions for large volumes with cost efficiency and structured schedules.",
+                "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
+            },
+            {
+                "title": "Air Freight",
+                "description": "Fast delivery for urgent needs with clear tracking systems.",
+                "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c"
+            },
+            {
+                "title": "Trucking & Interinsular",
+                "description": "Intercity and inter-island distribution with coordinated fleets.",
+                "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                "title": "Export & Import Handling (PPJK)",
+                "description": "Professional customs and documentation handling in compliance with regulations.",
+                "image": "https://images.unsplash.com/photo-1698392275407-e6f844224692?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+        ]
+    },
+    "why_choose_us": {
+        "title": "Why Choose Us",
+        "items": [
+            {
+                "title": "Nationwide Coverage",
+                "desc": "Our operational network spans across strategic cities in Indonesia, enabling faster deliveries and optimized distribution control."
+            },
+            {
+                "title": "End-to-End Logistics Solutions",
+                "desc": "We handle the entire process from planning to execution, so clients don’t need to coordinate with multiple vendors."
+            },
+            {
+                "title": "Experienced & Reliable Team",
+                "desc": "Our professional team has hands-on experience across various industries, ensuring consistent operational standards for every project."
+            },
+            {
+                "title": "Time & Cost Efficiency Focus",
+                "desc": "We optimize logistics costs without compromising delivery speed and shipment security."
+            }
+        ]
+    },
+    "social_proof": {
+        "title": "Klien & Mitra",
+        "clients": [
+            {
+                "name": "PT Suzuki Indomobil Motor",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "Aditya Birla Group",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "PT Kewalram Indonesia",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "PT Embee Plumbon Tekstil",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "PT Royal Coconut",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "PT Wook Global Technology",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            },
+            {
+                "name": "PT Sasa Inti",
+                "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+            }
+        ],
+        "title_testimonials": "What Our Clients Say",
+        "testimonials": [
+            {
+                "name": "Budi Santoso",
+                "company": "PT Suzuki Indomobil Motor",
+                "text": "Tim Hakka Hydro Tirta sangat responsif dan memahami kebutuhan operasional kami. Pengiriman jadi jauh lebih terstruktur."
+            },
+            {
+                "name": "Sarah Wijaya",
+                "company": "PT Sasa Inti",
+                "text": "Sistem mereka rapi dan transparan, koordinasi jadi lebih mudah bahkan untuk distribusi antar pulau."
+            },
+            {
+                "name": "Rina Setiawan",
+                "company": "PT Embee Plumbon Tekstil",
+                "text": "Kami sangat terbantu dengan solusi end-to-end mereka, dari perencanaan hingga eksekusi semua ditangani dengan baik."
+            }
+        ]
+    },
+    "cta_bottom": {
+        "title": "Need a reliable long-term logistics partner?",
+        "desc": "Contact our team today and start optimizing your business distribution.",
+        "primary": "Consult Now",
+        "secondary": "Explore Services"
+    }
+}

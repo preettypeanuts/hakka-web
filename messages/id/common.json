@@ -1,0 +1,32 @@
+{
+  "navbar": {
+    "menu": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "services": "Layanan",
+      "contact": "Kontak"
+    },
+    "cta": {
+      "contact": "Hubungi Kami"
+    }
+  },
+  "footer": {
+    "tagline": "Solusi logistik terintegrasi untuk bisnis yang lebih efisien dan terukur.",
+    "navigation": {
+      "title": "Navigasi",
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "services": "Layanan",
+      "contact": "Kontak"
+    },
+    "contact": {
+      "title": "Kontak",
+      "address": "Rukan Golf Island Blok J No. 55-56, Pantai Indah Kapuk, Jakarta Utara",
+      "email": "info@hht-logistics.com",
+      "phone": "+62 8xxx xxxx xxxx"
+    },
+    "legal": {
+      "copyright": "© 2026 Hakka Hydro Tirta. Seluruh hak dilindungi."
+    }
+  }
+}

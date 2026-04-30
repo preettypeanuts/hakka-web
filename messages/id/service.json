@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "title": "Layanan Logistik",
+    "description": "Sea freight, air freight, trucking hingga ekspor impor."
+  },
+
+  "services": {
+    "items": [
+      {
+        "title": "Sea Freight",
+        "desc": "Pengiriman laut skala besar.",
+        "benefit": "Biaya lebih efisien."
+      },
+      {
+        "title": "Air Freight",
+        "desc": "Pengiriman cepat.",
+        "benefit": "Lead time lebih singkat."
+      },
+      {
+        "title": "Export & Import",
+        "desc": "Penanganan dokumen lengkap.",
+        "benefit": "Minim risiko kesalahan."
+      },
+      {
+        "title": "Warehouse",
+        "desc": "Penyimpanan terorganisir.",
+        "benefit": "Efisiensi distribusi."
+      }
+    ]
+  },
+
+  "workflow": {
+    "title": "Cara Kerja Kami",
+    "steps": [
+      "Konsultasi Awal",
+      "Perencanaan Strategis",
+      "Eksekusi & Monitoring",
+      "Evaluasi"
+    ]
+  }
+}

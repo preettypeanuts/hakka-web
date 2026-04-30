@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "title": "Solusi Logistik Terintegrasi untuk Operasional yang Lebih Efisien",
+    "cta_primary": "Konsultasikan Kebutuhan Anda",
+    "cta_secondary": "Jelajahi",
+    "desc": "Dari ekspor hingga distribusi domestik, kami membantu perusahaan Anda bergerak lebih cepat dengan sistem logistik yang terstruktur, transparan, dan dapat diandalkan."
+  },
+  "origin": {
+    "label": "Awal Perjalanan",
+    "paragraph_start": "Didirikan pada tahun 2020 di Jakarta, PT Hakka Hydro Tirta berkembang pesat dari startup menjadi mitra logistik terpercaya bagi perusahaan nasional dan internasional, dengan jaringan operasional di berbagai kota utama seperti",
+    "paragraph_end": "serta komitmen menghadirkan solusi logistik yang efisien, terukur, dan menjaga kelancaran alur bisnis klien tanpa hambatan."
+  },
+  "badges": {
+    "items": [
+      {
+        "number": "100",
+        "title": "Pengiriman Sukses",
+        "description": "Telah menangani ratusan pengiriman lintas kota dan antar pulau dengan proses yang terstruktur dan minim kendala."
+      },
+      {
+        "number": "50",
+        "title": "Klien Perusahaan",
+        "description": "Dipercaya oleh berbagai perusahaan dari sektor manufaktur, FMCG, hingga teknologi untuk kebutuhan logistik mereka."
+      },
+      {
+        "number": "10",
+        "title": "Kota Operasional",
+        "description": "Jaringan operasional tersebar di kota-kota strategis untuk memastikan distribusi lebih cepat dan efisien."
+      }
+    ]
+  },
+  "services": {
+    "title": "Layanan Unggulan",
+    "subtitle": "Layanan inti kami untuk mendukung kebutuhan logistik bisnis Anda.",
+    "cta": "Konsultasi",
+    "wa_template": "Halo, saya tertarik dengan layanan {title}. Bisakah Anda memberikan informasi lebih lanjut?",
+    "items": [
+      {
+        "title": "Pengiriman Laut",
+        "description": "Solusi pengiriman laut untuk volume besar dengan efisiensi biaya dan jadwal yang terstruktur.",
+        "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
+      },
+      {
+        "title": "Pengiriman Udara",
+        "description": "Pengiriman cepat untuk kebutuhan mendesak dengan sistem pelacakan yang jelas.",
+        "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c"
+      },
+      {
+        "title": "Trucking & Antarpulau",
+        "description": "Distribusi antarkota dan antarpulau dengan armada yang terkoordinasi.",
+        "image": "https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62"
+      },
+      {
+        "title": "Pengurusan Ekspor & Impor (PPJK)",
+        "description": "Penanganan bea cukai dan dokumentasi secara profesional sesuai dengan peraturan yang berlaku.",
+        "image": "https://images.unsplash.com/photo-1601897690942-bcacbad33e55"
+      }
+    ]
+  },
+  "why_choose_us": {
+    "title": "Mengapa Memilih Kami",
+    "items": [
+      {
+        "title": "Jangkauan Nasional",
+        "desc": "Jaringan operasional kami tersebar di berbagai kota strategis di Indonesia untuk pengiriman lebih cepat dan distribusi optimal."
+      },
+      {
+        "title": "Solusi End-to-End",
+        "desc": "Kami menangani seluruh proses dari perencanaan hingga eksekusi tanpa perlu banyak vendor."
+      },
+      {
+        "title": "Tim Berpengalaman",
+        "desc": "Tim profesional dengan pengalaman lintas industri dan standar operasional yang konsisten."
+      },
+      {
+        "title": "Efisiensi Waktu & Biaya",
+        "desc": "Optimasi biaya tanpa mengorbankan kecepatan dan keamanan pengiriman."
+      }
+    ]
+  },
+  "social_proof": {
+    "title": "Clients & Partners",
+    "clients": [
+      {
+        "name": "PT Suzuki Indomobil Motor",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "Aditya Birla Group",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "PT Kewalram Indonesia",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "PT Embee Plumbon Tekstil",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "PT Royal Coconut",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "PT Wook Global Technology",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      },
+      {
+        "name": "PT Sasa Inti",
+        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
+      }
+    ],
+    "title_testimonials": "Apa Kata Klien Kami",
+    "testimonials": [
+      {
+        "name": "Budi Santoso",
+        "company": "PT Suzuki Indomobil Motor",
+        "text": "The Hakka Hydro Tirta team is very responsive and understands our operational needs. Logistics became much more structured."
+      },
+      {
+        "name": "Sarah Wijaya",
+        "company": "PT Sasa Inti",
+        "text": "Their system is structured and transparent, making coordination even across islands much easier."
+      },
+      {
+        "name": "Rina Setiawan",
+        "company": "PT Embee Plumbon Tekstil",
+        "text": "We are very helped with their end-to-end solutions, from planning to execution everything is handled well."
+      }
+    ]
+  },
+    "cta_bottom": {
+      "title": "Butuh partner logistik yang bisa diandalkan untuk jangka panjang?",
+      "desc": "Hubungi tim kami hari ini dan mulai optimalkan distribusi bisnis Anda.",
+      "primary": "Konsultasi Sekarang",
+      "secondary": "Pelajari Layanan"
+  }
+}

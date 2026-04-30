@@ -1,0 +1,29 @@
+{
+  "seo": {
+    "title": "Klien & Portofolio",
+    "description": "Dipercaya berbagai perusahaan nasional."
+  },
+
+  "clients": {
+    "categories": [
+      {
+        "name": "Manufaktur",
+        "items": ["PT Suzuki Indomobil Motor"]
+      },
+      {
+        "name": "FMCG",
+        "items": ["PT Sasa Inti", "PT Royal Coconut"]
+      }
+    ]
+  },
+
+  "case_study": {
+    "title": "Optimasi Distribusi FMCG",
+    "challenge": "Keterlambatan distribusi.",
+    "solution": "Integrasi sea freight dan trucking.",
+    "result": [
+      "Biaya turun 18%",
+      "Waktu lebih cepat 25%"
+    ]
+  }
+}

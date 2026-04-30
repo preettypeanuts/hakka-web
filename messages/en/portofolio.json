@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title": "Clients & Portfolio | Hakka Hydro Tirta",
+    "description": "Trusted by national and international companies across multiple industries."
+  },
+
+  "clients": {
+    "categories": [
+      {
+        "name": "Manufacturing",
+        "items": ["PT Suzuki Indomobil Motor"]
+      },
+      {
+        "name": "Textile & Industry",
+        "items": ["PT Embee Plumbon Tekstil", "PT Kewalram Indonesia"]
+      },
+      {
+        "name": "FMCG",
+        "items": ["PT Sasa Inti", "PT Royal Coconut"]
+      },
+      {
+        "name": "Technology & Electronics",
+        "items": ["PT Wook Global Technology"]
+      },
+      {
+        "name": "Others",
+        "items": ["Aditya Birla Group", "PT Porto Indonesia Sejahtera", "PT Bumiputra Manufaktur Teknologi"]
+      }
+    ]
+  },
+
+  "case_study": {
+    "title": "National Distribution Optimization for FMCG Company",
+    "challenge": "The client faced inconsistent inter-island delivery delays and unstable logistics costs.",
+    "solution": "We designed an integrated distribution system combining sea freight and trucking with route optimization.",
+    "result": [
+      "18% reduction in logistics costs",
+      "25% faster delivery time",
+      "Significantly improved shipment visibility"
+    ]
+  }
+}

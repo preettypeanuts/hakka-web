@@ -1,0 +1,50 @@
+{
+    "seo": {
+        "title": "Contact Us",
+        "description": "Discuss your logistics needs with our professional team today."
+    },
+    "contact": {
+        "head_office": "Jakarta - PIK",
+        "email": "info@hht-logistics.com",
+        "phone": "+62 8xxx xxxx xxxx",
+        "cities": [
+            "Medan",
+            "Batam",
+            "Surabaya",
+            "Makassar"
+        ]
+    },
+    "form": {
+        "fields": [
+            "Full Name",
+            "Company Name",
+            "Email",
+            "WhatsApp Number",
+            "Required Service",
+            "Project Description"
+        ],
+        "cta": "Send Message"
+    },
+    "faq": [
+        {
+            "q": "Do you provide nationwide shipping?",
+            "a": "Yes, we operate across major cities in Indonesia for nationwide distribution."
+        },
+        {
+            "q": "Can you handle export and import services?",
+            "a": "Yes, we provide end-to-end services including customs clearance (PPJK)."
+        },
+        {
+            "q": "How long is the delivery time?",
+            "a": "It depends on the service type and destination. Our team will provide detailed estimates during consultation."
+        },
+        {
+            "q": "Do you provide warehouse services?",
+            "a": "Yes, we offer structured warehouse management systems."
+        },
+        {
+            "q": "How do we start working together?",
+            "a": "You can contact us via form or WhatsApp for a free initial consultation."
+        }
+    ]
+}
