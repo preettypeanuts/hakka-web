@@ -14,7 +14,8 @@ import {
     Truck,
     Warehouse,
     Globe,
-    Package
+    Package,
+    Phone
 } from "lucide-react";
 
 export const Navbar = () => {
@@ -221,6 +222,8 @@ export const Navbar = () => {
                             </div>
                         ))}
 
+
+
                     </div>
                     {/* 🔥 CTA BAR */}
                     <div className="border-t border-neutral-200 bg-neutral-50 rounded-b-main">
@@ -235,11 +238,18 @@ export const Navbar = () => {
                                 </p>
                             </div>
 
-                            <Link href={megaCta.href}>
-                                <button className=" px-6 py-2 rounded-full bg-mainColor text-white text-sm font-medium hover:opacity-90 transition">
-                                    {megaCta.button} →
-                                </button>
-                            </Link>
+                            <div className="flex flex-col sm:flex-row gap-2">
+                                <Link href="/service">
+                                    <button className="px-6 py-2 bg-otherColor rounded-full border border-neutral-200 text-neutral-800 text-sm font-medium hover:bg-neutral-100 transition">
+                                        {t("menu.label_service")}
+                                    </button>
+                                </Link>
+                                <Link href={megaCta.href}>
+                                    <button className="px-6 py-2 flex items-center gap-2 rounded-full bg-mainColor text-white text-sm font-medium hover:opacity-90 transition">
+                                        {megaCta.button} <Phone className="size-3 fill-white" />
+                                    </button>
+                                </Link>
+                            </div>
 
                         </div>
                     </div>

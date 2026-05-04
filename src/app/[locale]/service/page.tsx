@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/page-hero";
+import { ServiceCTA } from "@/components/service-cta";
 import { ServiceGrid } from "@/components/service-grid";
 import { getTranslations } from "next-intl/server";
 
@@ -28,6 +29,7 @@ export default async function ServicePage() {
         image={t("image")}
       />
       <ServiceGrid {...dataService} />
+      <ServiceCTA />
     </>
   );
 }
