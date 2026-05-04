@@ -16,16 +16,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
     .default;
   const contact = (await import(`../../messages/${currentLocale}/contact.json`))
     .default;
+    const service = (await import(`../../messages/${currentLocale}/service.json`))
+    .default;
 
-  console.log("=== DEBUG messages keys ===");
-  console.log("home keys:", Object.keys(home));
-  console.log("common keys:", Object.keys(common));
-  console.log("about keys:", Object.keys(about));
-  console.log("contact keys:", Object.keys(contact));
-  console.log("currentLocale:", currentLocale);
-
-  console.log("about keys:", Object.keys(about));
-  console.log("about_services exists:", "about_services" in about); // tambah ini
 
   return {
     locale: currentLocale,
@@ -35,6 +28,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...banner,
       ...about,
       ...contact,
+      ...service,
     },
   };
 });

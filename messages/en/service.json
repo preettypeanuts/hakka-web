@@ -3,11 +3,13 @@
     "title": "Logistics Services",
     "description": "Comprehensive logistics solutions covering freight, transportation, warehousing, and customs handling across Indonesia."
   },
-  "services": {
+  "all_services": {
     "title": "Our Logistics Services",
+    "subtitle": "Our core services to support your business logistics needs.",
     "items": [
       {
         "title": "Sea Freight",
+        "featured": true,
         "desc": "End-to-end ocean freight solutions designed for large-scale and long-distance shipments.",
         "benefit": "More cost-efficient for high-volume cargo.",
         "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
@@ -21,6 +23,7 @@
       },
       {
         "title": "Air Freight",
+        "featured": false,
         "desc": "Fast and secure air transportation for time-sensitive and high-value shipments.",
         "benefit": "Shorter lead time with enhanced cargo security.",
         "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
@@ -34,6 +37,7 @@
       },
       {
         "title": "Export & Import Handling",
+        "featured": true,
         "desc": "Comprehensive support for export and import processes, including documentation and compliance.",
         "benefit": "Faster clearance with minimized administrative risk.",
         "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
@@ -47,6 +51,7 @@
       },
       {
         "title": "Inbound & Outbound Logistics",
+        "featured": false,
         "desc": "Efficient management of incoming and outgoing goods to streamline supply chain operations.",
         "benefit": "Better inventory accuracy and distribution control.",
         "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
@@ -60,6 +65,7 @@
       },
       {
         "title": "Interinsular Shipping",
+        "featured": false,
         "desc": "Reliable inter-island distribution services supported by an extensive logistics network.",
         "benefit": "Expand your business reach across regions.",
         "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
@@ -73,6 +79,7 @@
       },
       {
         "title": "Trucking",
+        "featured": false,
         "desc": "Land transportation services with a well-managed and coordinated fleet.",
         "benefit": "Flexible delivery from local to nationwide scale.",
         "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
@@ -86,6 +93,7 @@
       },
       {
         "title": "Warehouse",
+        "featured": false,
         "desc": "Secure and organized storage solutions with advanced inventory management systems.",
         "benefit": "Improved stock security and operational efficiency.",
         "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
@@ -99,6 +107,7 @@
       },
       {
         "title": "PPJK (Customs Clearance)",
+        "featured": false,
         "desc": "Professional customs brokerage services to ensure smooth import and export clearance.",
         "benefit": "Avoid delays and regulatory complications.",
         "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",

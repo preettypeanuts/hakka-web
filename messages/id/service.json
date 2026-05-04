@@ -3,11 +3,13 @@
     "title": "Layanan Logistik",
     "description": "Solusi logistik komprehensif yang mencakup pengiriman, transportasi, pergudangan, dan pengurusan kepabeanan di seluruh Indonesia."
   },
-  "services": {
+  "all_services": {
     "title": "Layanan Logistik Kami",
+    "subtitle": "Layanan inti kami untuk mendukung kebutuhan logistik bisnis Anda.",
     "items": [
       {
         "title": "Sea Freight",
+        "featured": true,
         "desc": "Solusi pengiriman laut end-to-end yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
         "benefit": "Lebih efisien secara biaya untuk kargo volume tinggi.",
         "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
@@ -21,6 +23,7 @@
       },
       {
         "title": "Air Freight",
+        "featured": false,
         "desc": "Transportasi udara yang cepat dan aman untuk pengiriman yang sensitif terhadap waktu dan bernilai tinggi.",
         "benefit": "Lead time lebih singkat dengan keamanan kargo yang lebih tinggi.",
         "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
@@ -34,6 +37,7 @@
       },
       {
         "title": "Export & Import Handling",
+        "featured": true,
         "desc": "Dukungan komprehensif untuk proses ekspor dan impor, termasuk dokumentasi dan kepatuhan.",
         "benefit": "Proses clearance lebih cepat dengan risiko administrasi yang minim.",
         "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
@@ -47,6 +51,7 @@
       },
       {
         "title": "Inbound & Outbound Logistics",
+        "featured": false,
         "desc": "Manajemen efisien arus barang masuk dan keluar untuk memperlancar operasional rantai pasok.",
         "benefit": "Akurasi inventori dan kontrol distribusi yang lebih baik.",
         "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
@@ -60,6 +65,7 @@
       },
       {
         "title": "Interinsular Shipping",
+        "featured": false,
         "desc": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas.",
         "benefit": "Memperluas jangkauan bisnis Anda ke berbagai wilayah.",
         "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
@@ -73,6 +79,7 @@
       },
       {
         "title": "Trucking",
+        "featured": false,
         "desc": "Layanan transportasi darat dengan armada yang terkelola dan terkoordinasi dengan baik.",
         "benefit": "Pengiriman fleksibel dari skala lokal hingga nasional.",
         "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
@@ -86,6 +93,7 @@
       },
       {
         "title": "Warehouse",
+        "featured": false,
         "desc": "Solusi penyimpanan yang aman dan terorganisir dengan sistem manajemen inventori modern.",
         "benefit": "Keamanan stok dan efisiensi operasional yang lebih baik.",
         "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
@@ -99,6 +107,7 @@
       },
       {
         "title": "PPJK (Customs Clearance)",
+        "featured": false,
         "desc": "Layanan kepabeanan profesional untuk memastikan kelancaran proses impor dan ekspor.",
         "benefit": "Menghindari keterlambatan dan kendala regulasi.",
         "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
