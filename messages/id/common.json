@@ -2,16 +2,81 @@
   "navbar": {
     "menu": {
       "home": "Beranda",
+      "services": {
+        "label": "Layanan",
+        "groups": [
+          {
+            "title": "Layanan Pengiriman",
+            "items": [
+              {
+                "name": "Pengiriman Laut",
+                "desc": "Solusi hemat untuk pengiriman skala besar.",
+                "href": "/services/sea-freight"
+              },
+              {
+                "name": "Pengiriman Udara",
+                "desc": "Pengiriman cepat dan aman untuk kebutuhan mendesak.",
+                "href": "/services/air-freight"
+              }
+            ]
+          },
+          {
+            "title": "Solusi Logistik",
+            "items": [
+              {
+                "name": "Inbound & Outbound Logistics",
+                "desc": "Manajemen arus barang masuk dan keluar secara terstruktur.",
+                "href": "/services/logistics"
+              },
+              {
+                "name": "Pengiriman Antar Pulau",
+                "desc": "Distribusi ke berbagai wilayah di Indonesia.",
+                "href": "/services/interinsular"
+              },
+              {
+                "name": "Trucking",
+                "desc": "Transportasi darat yang fleksibel dan terkoordinasi.",
+                "href": "/services/trucking"
+              }
+            ]
+          },
+          {
+            "title": "Layanan Pendukung",
+            "items": [
+              {
+                "name": "Warehouse",
+                "desc": "Penyimpanan aman dengan sistem manajemen modern.",
+                "href": "/services/warehouse"
+              },
+              {
+                "name": "Ekspor & Impor",
+                "desc": "Penanganan lengkap termasuk dokumentasi.",
+                "href": "/services/export-import"
+              },
+              {
+                "name": "PPJK (Kepabeanan)",
+                "desc": "Pengurusan bea cukai secara profesional.",
+                "href": "/services/ppjk"
+              }
+            ]
+          }
+        ]
+      },
       "about": "Tentang Kami",
-      "services": "Layanan",
       "contact": "Kontak"
     },
     "cta": {
       "contact": "Hubungi Kami"
+    },
+    "cta_mega": {
+      "title": "Butuh solusi logistik khusus?",
+      "desc": "Diskusikan kebutuhan Anda bersama tim kami untuk solusi terbaik.",
+      "button": "Konsultasi Sekarang",
+      "href": "/contact"
     }
   },
   "footer": {
-    "tagline": "Solusi logistik terintegrasi untuk bisnis yang lebih efisien dan terukur.",
+    "tagline": "Solusi logistik terintegrasi untuk operasional bisnis yang efisien dan terukur.",
     "navigation": {
       "title": "Navigasi",
       "home": "Beranda",
@@ -21,12 +86,12 @@
     },
     "contact": {
       "title": "Kontak",
-      "address": "Rukan Golf Island Blok J No. 55-56, Pantai Indah Kapuk, Jakarta Utara",
+      "address": "Golf Island Commercial Block J No. 55-56, Pantai Indah Kapuk, Jakarta Utara",
       "email": "info@hht-logistics.com",
       "phone": "+62 8xxx xxxx xxxx"
     },
     "legal": {
-      "copyright": "© 2026 Hakka Hydro Tirta. Seluruh hak dilindungi."
+      "copyright": "© 2026 Hakka Hydro Tirta. Seluruh hak cipta dilindungi."
     }
   }
 }

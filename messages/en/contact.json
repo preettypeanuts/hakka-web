@@ -19,6 +19,9 @@
         ]
     },
     "form": {
+        "eyebrow": "Contact Us",
+        "title": "Let’s Move Your Business Forward",
+        "description": "Tell us what you need, and our team will craft the most efficient logistics solution tailored to your business.",
         "fields": [
             "Full Name",
             "Company Name",
@@ -27,7 +30,19 @@
             "Required Service",
             "Project Description"
         ],
-        "cta": "Send Message"
+        "placeholders": {
+            "Full Name": "Enter your full name",
+            "Company Name": "Enter your company name",
+            "Email": "Enter your email address",
+            "WhatsApp Number": "Enter your WhatsApp number",
+            "Required Service": "What service do you need?",
+            "Project Description": "Tell us about your project..."
+        },
+        "helper": {
+            "Email": "We’ll never share your email."
+        },
+        "cta": "Send Message",
+        "bottom_note": "Response within 24 hours • Professional consultation • No obligation"
     },
     "faq": [
         {

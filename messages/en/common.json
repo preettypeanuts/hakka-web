@@ -2,12 +2,77 @@
   "navbar": {
     "menu": {
       "home": "Home",
+      "services": {
+        "label": "Services",
+        "groups": [
+          {
+            "title": "Freight Services",
+            "items": [
+              {
+                "name": "Sea Freight",
+                "desc": "Cost-efficient shipping for large-scale cargo.",
+                "href": "/services/sea-freight"
+              },
+              {
+                "name": "Air Freight",
+                "desc": "Fast and secure delivery for urgent shipments.",
+                "href": "/services/air-freight"
+              }
+            ]
+          },
+          {
+            "title": "Logistics Solutions",
+            "items": [
+              {
+                "name": "Inbound & Outbound Logistics",
+                "desc": "Structured goods flow management.",
+                "href": "/services/logistics"
+              },
+              {
+                "name": "Interinsular Shipping",
+                "desc": "Distribution across Indonesian islands.",
+                "href": "/services/interinsular"
+              },
+              {
+                "name": "Trucking",
+                "desc": "Flexible land transportation services.",
+                "href": "/services/trucking"
+              }
+            ]
+          },
+          {
+            "title": "Support Services",
+            "items": [
+              {
+                "name": "Warehouse",
+                "desc": "Secure storage with inventory system.",
+                "href": "/services/warehouse"
+              },
+              {
+                "name": "Export & Import",
+                "desc": "Complete handling with documentation.",
+                "href": "/services/export-import"
+              },
+              {
+                "name": "PPJK (Customs Clearance)",
+                "desc": "Professional customs handling.",
+                "href": "/services/ppjk"
+              }
+            ]
+          }
+        ]
+      },
       "about": "About",
-      "services": "Services",
       "contact": "Contact"
     },
     "cta": {
       "contact": "Contact Us"
+    },
+    "cta_mega": {
+      "title": "Need a custom logistics solution?",
+      "desc": "Talk to our team and get the most efficient strategy for your business.",
+      "button": "Consult Now",
+      "href": "/contact"
     }
   },
   "footer": {

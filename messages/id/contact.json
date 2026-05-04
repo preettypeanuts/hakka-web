@@ -19,15 +19,30 @@
         ]
     },
     "form": {
+        "eyebrow": "Kontak",
+        "title": "Mari Dorong Bisnis Anda Lebih Maju",
+        "description": "Ceritakan kebutuhan Anda, dan tim kami akan menyiapkan solusi logistik yang paling efisien untuk bisnis Anda.",
         "fields": [
             "Nama Lengkap",
             "Nama Perusahaan",
             "Email",
-            "WhatsApp",
-            "Jenis Layanan",
-            "Deskripsi"
+            "Nomor WhatsApp",
+            "Layanan yang Dibutuhkan",
+            "Deskripsi Proyek"
         ],
-        "cta": "Kirim"
+        "placeholders": {
+            "Nama Lengkap": "Masukkan nama lengkap Anda",
+            "Nama Perusahaan": "Masukkan nama perusahaan",
+            "Email": "Masukkan alamat email",
+            "Nomor WhatsApp": "Masukkan nomor WhatsApp",
+            "Layanan yang Dibutuhkan": "Layanan apa yang Anda butuhkan?",
+            "Deskripsi Proyek": "Ceritakan kebutuhan atau proyek Anda..."
+        },
+        "helper": {
+            "Email": "Kami tidak akan membagikan email Anda."
+        },
+        "cta": "Kirim Pesan",
+        "bottom_note": "Respon dalam 24 jam • Konsultasi profesional • Tanpa komitmen"
     },
     "faq": [
         {
