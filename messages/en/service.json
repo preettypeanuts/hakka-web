@@ -1,41 +1,136 @@
 {
   "seo": {
     "title": "Logistics Services",
-    "description": "Complete logistics solutions including sea freight, air freight, trucking, and customs handling."
+    "description": "Comprehensive logistics solutions covering freight, transportation, warehousing, and customs handling across Indonesia."
   },
-
   "services": {
+    "title": "Our Logistics Services",
     "items": [
       {
         "title": "Sea Freight",
-        "desc": "Large-scale ocean freight solutions for cost-efficient shipping.",
-        "benefit": "More cost-effective for high-volume shipments."
+        "desc": "End-to-end ocean freight solutions designed for large-scale and long-distance shipments.",
+        "benefit": "More cost-efficient for high-volume cargo.",
+        "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
+        "details": [
+          "Full Container Load (FCL) and Less than Container Load (LCL) options",
+          "Optimized route and vessel scheduling",
+          "Port handling and coordination",
+          "Cargo consolidation and tracking",
+          "Reliable transit time management"
+        ]
       },
       {
         "title": "Air Freight",
-        "desc": "Fast shipping solutions for urgent and high-value goods.",
-        "benefit": "Shorter lead time with higher security."
+        "desc": "Fast and secure air transportation for time-sensitive and high-value shipments.",
+        "benefit": "Shorter lead time with enhanced cargo security.",
+        "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
+        "details": [
+          "Priority and express shipment handling",
+          "Global airline network access",
+          "Real-time shipment tracking",
+          "Secure handling for fragile and high-value goods",
+          "Flexible scheduling for urgent deliveries"
+        ]
       },
       {
         "title": "Export & Import Handling",
-        "desc": "Complete documentation and customs clearance services.",
-        "benefit": "Faster process with reduced administrative risks."
+        "desc": "Comprehensive support for export and import processes, including documentation and compliance.",
+        "benefit": "Faster clearance with minimized administrative risk.",
+        "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
+        "details": [
+          "Complete documentation management",
+          "Customs clearance coordination",
+          "Regulatory compliance handling",
+          "Duty and tax consultation",
+          "End-to-end shipment processing"
+        ]
+      },
+      {
+        "title": "Inbound & Outbound Logistics",
+        "desc": "Efficient management of incoming and outgoing goods to streamline supply chain operations.",
+        "benefit": "Better inventory accuracy and distribution control.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
+        "details": [
+          "Inventory flow management",
+          "Distribution planning and execution",
+          "Warehouse integration",
+          "Real-time stock monitoring",
+          "Supply chain optimization"
+        ]
+      },
+      {
+        "title": "Interinsular Shipping",
+        "desc": "Reliable inter-island distribution services supported by an extensive logistics network.",
+        "benefit": "Expand your business reach across regions.",
+        "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
+        "details": [
+          "Nationwide island coverage",
+          "Flexible shipping schedules",
+          "Multi-modal transportation support",
+          "Cargo consolidation services",
+          "Efficient last-mile coordination"
+        ]
+      },
+      {
+        "title": "Trucking",
+        "desc": "Land transportation services with a well-managed and coordinated fleet.",
+        "benefit": "Flexible delivery from local to nationwide scale.",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+        "details": [
+          "Dedicated and shared trucking options",
+          "Fleet monitoring and coordination",
+          "Route optimization for efficiency",
+          "Door-to-door delivery service",
+          "Support for various cargo types"
+        ]
       },
       {
         "title": "Warehouse",
-        "desc": "Well-managed storage facilities with structured inventory systems.",
-        "benefit": "Improved storage security and distribution efficiency."
+        "desc": "Secure and organized storage solutions with advanced inventory management systems.",
+        "benefit": "Improved stock security and operational efficiency.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+        "details": [
+          "Short-term and long-term storage",
+          "Inventory management system (IMS)",
+          "Order fulfillment services",
+          "Stock monitoring and reporting",
+          "Safe and controlled storage environment"
+        ]
+      },
+      {
+        "title": "PPJK (Customs Clearance)",
+        "desc": "Professional customs brokerage services to ensure smooth import and export clearance.",
+        "benefit": "Avoid delays and regulatory complications.",
+        "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+        "details": [
+          "Customs documentation processing",
+          "Regulatory compliance assurance",
+          "Import/export licensing support",
+          "Duty and tax calculation assistance",
+          "Fast and reliable clearance handling"
+        ]
       }
     ]
   },
-
   "workflow": {
     "title": "How We Work",
     "steps": [
-      "Initial Consultation",
-      "Strategic Planning",
-      "Execution & Monitoring",
-      "Reporting & Evaluation"
+      {
+        "title": "Initial Consultation",
+        "desc": "We understand your logistics requirements, business goals, and operational challenges."
+      },
+      {
+        "title": "Strategic Planning",
+        "desc": "We design tailored logistics strategies with the most efficient routes and methods."
+      },
+      {
+        "title": "Execution & Monitoring",
+        "desc": "We execute shipments with real-time tracking and proactive monitoring."
+      },
+      {
+        "title": "Reporting & Evaluation",
+        "desc": "We provide performance insights and continuous improvement recommendations."
+      }
     ]
   }
 }

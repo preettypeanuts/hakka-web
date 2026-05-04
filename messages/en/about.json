@@ -13,12 +13,67 @@
     "vision_title": "Vision",
     "vision": "To become a leading logistics company in Indonesia with an integrated network and excellent service standards.",
     "mission_title": "Mission",
-    "mission": [
+    "mission": [  
       "To deliver integrated logistics solutions that are efficient, measurable, and reliable.",
       "To expand and strengthen our operational network to serve logistics needs across Indonesia.",
       "To optimize processes through technology and integrated systems.",
       "To build long-term partnerships with clients based on trust and transparency.",
       "To maintain service excellence through precise and high-standard execution."
+    ]
+  },
+  "about_services": {
+    "title": "Our Services",
+    "view_more": "View All Services",
+    "cta": "Consult with Us",
+    "items": [
+      {
+        "title": "Sea Freight",
+        "desc": "Ocean shipping solutions for large-scale needs with optimal route planning.",
+        "benefit": "More cost-efficient for high-volume shipments.",
+        "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2"
+      },
+      {
+        "title": "Air Freight",
+        "desc": "Fast shipping solutions for urgent and high-value cargo.",
+        "benefit": "Shorter lead time and higher security.",
+        "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59"
+      },
+      {
+        "title": "Export & Import",
+        "desc": "Comprehensive handling of export and import activities, including documentation.",
+        "benefit": "Faster processes with minimized administrative errors.",
+        "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55"
+      },
+      {
+        "title": "Inbound & Outbound Logistics",
+        "desc": "Structured management of incoming and outgoing goods flow.",
+        "benefit": "More accurate inventory and distribution control.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+      {
+        "title": "Interinsular Shipping",
+        "desc": "Inter-island distribution with an extensive network.",
+        "benefit": "Expand your business market reach.",
+        "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2"
+      },
+      {
+        "title": "Trucking",
+        "desc": "Land transportation with a well-coordinated fleet.",
+        "benefit": "Flexible delivery from local to nationwide scale.",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      },
+      {
+        "title": "Warehouse",
+        "desc": "Storage solutions with well-organized management systems.",
+        "benefit": "Improved stock security and distribution efficiency.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+      },
+      {
+        "title": "PPJK (Customs Clearance)",
+        "desc": "Professional customs clearance services.",
+        "benefit": "Avoid delays and regulatory issues.",
+        "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
+      }
     ]
   },
   "values": {

@@ -21,6 +21,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
   console.log("about keys:", Object.keys(about));
   console.log("currentLocale:", currentLocale);
 
+  console.log("about keys:", Object.keys(about));
+console.log("about_services exists:", "about_services" in about);  // tambah ini
+
   return {
     locale: currentLocale,
     messages: {

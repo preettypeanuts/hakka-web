@@ -1,41 +1,136 @@
 {
   "seo": {
     "title": "Layanan Logistik",
-    "description": "Sea freight, air freight, trucking hingga ekspor impor."
+    "description": "Solusi logistik komprehensif yang mencakup pengiriman, transportasi, pergudangan, dan pengurusan kepabeanan di seluruh Indonesia."
   },
-
   "services": {
+    "title": "Layanan Logistik Kami",
     "items": [
       {
         "title": "Sea Freight",
-        "desc": "Pengiriman laut skala besar.",
-        "benefit": "Biaya lebih efisien."
+        "desc": "Solusi pengiriman laut end-to-end yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
+        "benefit": "Lebih efisien secara biaya untuk kargo volume tinggi.",
+        "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
+        "details": [
+          "Opsi Full Container Load (FCL) dan Less than Container Load (LCL)",
+          "Optimasi rute dan penjadwalan kapal",
+          "Penanganan dan koordinasi pelabuhan",
+          "Konsolidasi dan pelacakan kargo",
+          "Manajemen waktu transit yang andal"
+        ]
       },
       {
         "title": "Air Freight",
-        "desc": "Pengiriman cepat.",
-        "benefit": "Lead time lebih singkat."
+        "desc": "Transportasi udara yang cepat dan aman untuk pengiriman yang sensitif terhadap waktu dan bernilai tinggi.",
+        "benefit": "Lead time lebih singkat dengan keamanan kargo yang lebih tinggi.",
+        "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
+        "details": [
+          "Penanganan pengiriman prioritas dan ekspres",
+          "Akses ke jaringan maskapai global",
+          "Pelacakan pengiriman secara real-time",
+          "Penanganan aman untuk barang rapuh dan bernilai tinggi",
+          "Penjadwalan fleksibel untuk pengiriman mendesak"
+        ]
       },
       {
-        "title": "Export & Import",
-        "desc": "Penanganan dokumen lengkap.",
-        "benefit": "Minim risiko kesalahan."
+        "title": "Export & Import Handling",
+        "desc": "Dukungan komprehensif untuk proses ekspor dan impor, termasuk dokumentasi dan kepatuhan.",
+        "benefit": "Proses clearance lebih cepat dengan risiko administrasi yang minim.",
+        "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
+        "details": [
+          "Manajemen dokumentasi lengkap",
+          "Koordinasi customs clearance",
+          "Penanganan kepatuhan regulasi",
+          "Konsultasi bea dan pajak",
+          "Proses pengiriman end-to-end"
+        ]
+      },
+      {
+        "title": "Inbound & Outbound Logistics",
+        "desc": "Manajemen efisien arus barang masuk dan keluar untuk memperlancar operasional rantai pasok.",
+        "benefit": "Akurasi inventori dan kontrol distribusi yang lebih baik.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
+        "details": [
+          "Manajemen alur inventori",
+          "Perencanaan dan eksekusi distribusi",
+          "Integrasi dengan gudang",
+          "Pemantauan stok secara real-time",
+          "Optimasi rantai pasok"
+        ]
+      },
+      {
+        "title": "Interinsular Shipping",
+        "desc": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas.",
+        "benefit": "Memperluas jangkauan bisnis Anda ke berbagai wilayah.",
+        "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
+        "details": [
+          "Cakupan pengiriman seluruh Indonesia",
+          "Jadwal pengiriman fleksibel",
+          "Dukungan transportasi multimoda",
+          "Layanan konsolidasi kargo",
+          "Koordinasi last-mile yang efisien"
+        ]
+      },
+      {
+        "title": "Trucking",
+        "desc": "Layanan transportasi darat dengan armada yang terkelola dan terkoordinasi dengan baik.",
+        "benefit": "Pengiriman fleksibel dari skala lokal hingga nasional.",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+        "details": [
+          "Opsi trucking dedicated dan sharing",
+          "Monitoring dan koordinasi armada",
+          "Optimasi rute untuk efisiensi",
+          "Layanan pengiriman door-to-door",
+          "Mendukung berbagai jenis kargo"
+        ]
       },
       {
         "title": "Warehouse",
-        "desc": "Penyimpanan terorganisir.",
-        "benefit": "Efisiensi distribusi."
+        "desc": "Solusi penyimpanan yang aman dan terorganisir dengan sistem manajemen inventori modern.",
+        "benefit": "Keamanan stok dan efisiensi operasional yang lebih baik.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+        "details": [
+          "Penyimpanan jangka pendek dan panjang",
+          "Sistem manajemen inventori (IMS)",
+          "Layanan pemenuhan pesanan",
+          "Pemantauan dan laporan stok",
+          "Lingkungan penyimpanan yang aman dan terkontrol"
+        ]
+      },
+      {
+        "title": "PPJK (Customs Clearance)",
+        "desc": "Layanan kepabeanan profesional untuk memastikan kelancaran proses impor dan ekspor.",
+        "benefit": "Menghindari keterlambatan dan kendala regulasi.",
+        "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+        "details": [
+          "Pengurusan dokumen kepabeanan",
+          "Jaminan kepatuhan regulasi",
+          "Dukungan perizinan impor/ekspor",
+          "Bantuan perhitungan bea dan pajak",
+          "Proses clearance yang cepat dan andal"
+        ]
       }
     ]
   },
-
   "workflow": {
     "title": "Cara Kerja Kami",
     "steps": [
-      "Konsultasi Awal",
-      "Perencanaan Strategis",
-      "Eksekusi & Monitoring",
-      "Evaluasi"
+      {
+        "title": "Konsultasi Awal",
+        "desc": "Kami memahami kebutuhan logistik, tujuan bisnis, dan tantangan operasional Anda."
+      },
+      {
+        "title": "Perencanaan Strategis",
+        "desc": "Kami merancang strategi logistik yang disesuaikan dengan rute dan metode paling efisien."
+      },
+      {
+        "title": "Eksekusi & Monitoring",
+        "desc": "Kami menjalankan pengiriman dengan pelacakan real-time dan pemantauan proaktif."
+      },
+      {
+        "title": "Pelaporan & Evaluasi",
+        "desc": "Kami memberikan insight performa serta rekomendasi peningkatan berkelanjutan."
+      }
     ]
   }
 }

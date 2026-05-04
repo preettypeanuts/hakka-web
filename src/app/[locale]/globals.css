@@ -49,18 +49,18 @@ body {
 }
 
 @utility left-margin {
-  @apply ml-4 md:ml-30;
+  @apply ml-4 md:ml-15;
 }
 
 @utility right-margin {
-  @apply mr-4 md:mr-30;
+  @apply mr-4 md:mr-15;
 }
 
 @utility left-padding {
-  @apply pl-4 md:pl-30;
+  @apply pl-4 md:pl-15;
 }
 @utility right-padding {
-  @apply pr-4 md:pr-30;
+  @apply pr-4 md:pr-15;
 }
 
 @utility spacing {

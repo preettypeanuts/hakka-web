@@ -21,6 +21,61 @@
             "Menjaga kualitas layanan melalui eksekusi yang presisi dan berstandar tinggi."
         ]
     },
+    "about_services": {
+        "title": "Layanan Kami",
+        "view_more": "Lihat Semua Layanan",
+        "cta": "Konsultasikan",
+        "items": [
+            {
+                "title": "Sea Freight",
+                "desc": "Pengiriman laut untuk kebutuhan skala besar dengan perencanaan rute yang optimal.",
+                "benefit": "Biaya lebih efisien untuk volume tinggi.",
+                "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2"
+            },
+            {
+                "title": "Air Freight",
+                "desc": "Solusi pengiriman cepat untuk kebutuhan mendesak dan bernilai tinggi.",
+                "benefit": "Lead time lebih singkat dan keamanan lebih tinggi.",
+                "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59"
+            },
+            {
+                "title": "Export & Import",
+                "desc": "Penanganan lengkap aktivitas ekspor dan impor termasuk dokumentasi.",
+                "benefit": "Proses lebih cepat tanpa risiko kesalahan administrasi.",
+                "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55"
+            },
+            {
+                "title": "Inbound & Outbound Logistics",
+                "desc": "Manajemen arus barang masuk dan keluar secara terstruktur.",
+                "benefit": "Kontrol inventory dan distribusi lebih akurat.",
+                "image": "https://images.unsplash.com/photo-1553413077-190dd305871c"
+            },
+            {
+                "title": "Interinsular Shipping",
+                "desc": "Distribusi antar pulau dengan jaringan luas.",
+                "benefit": "Memperluas jangkauan pasar bisnis Anda.",
+                "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2"
+            },
+            {
+                "title": "Trucking",
+                "desc": "Pengiriman darat dengan armada terkoordinasi.",
+                "benefit": "Fleksibilitas pengiriman dalam skala lokal hingga nasional.",
+                "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+            },
+            {
+                "title": "Warehouse",
+                "desc": "Penyimpanan barang dengan sistem manajemen yang rapi.",
+                "benefit": "Keamanan stok dan efisiensi distribusi.",
+                "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+            },
+            {
+                "title": "PPJK (Customs Clearance)",
+                "desc": "Pengurusan kepabeanan secara profesional.",
+                "benefit": "Menghindari delay dan kendala regulasi.",
+                "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
+            }
+        ]
+    },
     "values": {
         "title": "Nilai Perusahaan",
         "items": [
