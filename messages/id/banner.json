@@ -1,0 +1,17 @@
+{
+  "about_banner": {
+    "title": "Tentang Kami",
+    "subtitle": "Mitra logistik terpercaya yang dibangun atas integritas, efisiensi, dan komitmen.",
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+  },
+  "services_banner": {
+    "title": "Layanan Kami",
+    "subtitle": "Solusi logistik menyeluruh yang disesuaikan dengan kebutuhan bisnis Anda.",
+    "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
+  },
+  "contact_banner": {
+    "title": "Hubungi Kami",
+    "subtitle": "Mari diskusikan bagaimana kami dapat mendukung operasional logistik Anda.",
+    "image": "https://images.unsplash.com/photo-1423666639041-f56000c27a9a"
+  }
+}

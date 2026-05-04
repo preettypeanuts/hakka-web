@@ -3,20 +3,24 @@
     "title": "About Us | Hakka Hydro Tirta Logistics",
     "description": "A trusted logistics company with extensive network and integrated solutions across Indonesia."
   },
-
-  "origin": {
+  "about_us": {
+    "eyebrow": "About Us",
     "title": "Our Origin Story",
-    "paragraph": "Founded in 2020 in Jakarta, PT Hakka Hydro Tirta started as a small initiative to build more structured and reliable logistics services. Over time, it has grown into a trusted logistics partner for both national and international companies. With operational networks across major cities such as Jakarta, Surabaya, Semarang, Makassar, and Batam, we bridge complex logistics needs with efficient and measurable solutions. We believe logistics is not just about delivery, but about keeping business flows running without disruption."
+    "paragraph": "Founded in 2020 in Jakarta, PT Hakka Hydro Tirta began with a commitment to delivering more structured and reliable logistics services. In a short time, the company grew from a startup into a trusted logistics partner for a wide range of national and international corporations. With an operational network spanning key cities including Jakarta, Surabaya, Semarang, Makassar, and Batam, we bridge the complexity of logistics needs with efficient and scalable solutions.",
+    "cta": "Learn more about us"
   },
-
   "vision_mission": {
     "vision_title": "Vision",
-    "vision": "To become a leading logistics company in Indonesia with comprehensive nationwide coverage.",
-
+    "vision": "To become a leading logistics company in Indonesia with an integrated network and excellent service standards.",
     "mission_title": "Mission",
-    "mission": "To deliver integrated logistics solutions through strategic approaches, deep industry understanding, and precise execution."
+    "mission": [
+      "To deliver integrated logistics solutions that are efficient, measurable, and reliable.",
+      "To expand and strengthen our operational network to serve logistics needs across Indonesia.",
+      "To optimize processes through technology and integrated systems.",
+      "To build long-term partnerships with clients based on trust and transparency.",
+      "To maintain service excellence through precise and high-standard execution."
+    ]
   },
-
   "values": {
     "title": "Core Values",
     "items": [

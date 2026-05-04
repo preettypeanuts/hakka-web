@@ -3,15 +3,23 @@
         "title": "Tentang Kami | Hakka Hydro Tirta Logistics",
         "description": "Perusahaan logistik terpercaya dengan jaringan luas dan solusi terintegrasi."
     },
-    "origin": {
-        "title": "Awal Perjalanan",
-        "paragraph": "Didirikan pada tahun 2020 di Jakarta, PT Hakka Hydro Tirta berkembang dari startup menjadi mitra logistik terpercaya..."
+    "about_us": {
+        "eyebrow": "Tentang Kami",
+        "title": "Kisah Awal Kami",
+        "paragraph": "Kami hadir sebagai jawaban atas tantangan logistik yang semakin kompleks di Indonesia. Didirikan dengan visi membangun ekosistem distribusi yang andal dan efisien, kami telah melayani ribuan mitra bisnis dari berbagai industri dengan standar operasional tertinggi. Setiap pengiriman adalah komitmen kami terhadap ketepatan waktu, keamanan kargo, dan kepuasan pelanggan.",
+        "cta": "Pelajari lebih lanjut"
     },
     "vision_mission": {
         "vision_title": "Visi",
-        "vision": "Menjadi perusahaan logistik terdepan di Indonesia.",
+        "vision": "Menjadi perusahaan logistik terdepan di Indonesia dengan jaringan terintegrasi dan standar layanan yang unggul.",
         "mission_title": "Misi",
-        "mission": "Menyediakan solusi logistik terpadu dengan pendekatan strategis."
+        "mission": [
+            "Menyediakan solusi logistik terpadu yang efisien, terukur, dan dapat diandalkan.",
+            "Mengembangkan jaringan operasional yang luas untuk menjangkau kebutuhan logistik di seluruh Indonesia.",
+            "Mengoptimalkan proses melalui teknologi dan sistem yang terintegrasi.",
+            "Membangun kemitraan jangka panjang dengan klien berbasis kepercayaan dan transparansi.",
+            "Menjaga kualitas layanan melalui eksekusi yang presisi dan berstandar tinggi."
+        ]
     },
     "values": {
         "title": "Nilai Perusahaan",

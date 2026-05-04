@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./language-switcher";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navitagion";
+
 
 export const Navbar = () => {
     const t = useTranslations("navbar");
@@ -33,21 +35,22 @@ export const Navbar = () => {
         `}>
             <div className="margin h-18 flex items-center justify-between">
 
-                {/* Logo */}
-                <Image
-                    width={50}
-                    height={50}
-                    src="/logobnw.png"
-                    alt="Logo"
-                    className="h-10 w-22 object-cover invert"
-                />
+                <Link href="/">
+                    <Image
+                        width={50}
+                        height={50}
+                        src="/logobnw.png"
+                        alt="Logo"
+                        className="h-10 w-22 object-cover invert"
+                    />
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 text-[16px] font-medium text-white">
-                    <a href="#">{t("menu.home")}</a>
-                    <a href="#">{t("menu.about")}</a>
-                    <a href="#">{t("menu.services")}</a>
-                    <a href="#">{t("menu.contact")}</a>
+                    <Link href="/">{t("menu.home")}</Link>
+                    <Link href="/about">{t("menu.about")}</Link>
+                    <Link href="/services">{t("menu.services")}</Link>
+                    <Link href="/contact">{t("menu.contact")}</Link>
                 </div>
 
                 {/* Desktop Right */}
@@ -71,14 +74,14 @@ export const Navbar = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden px-4 pb-4 flex flex-col gap-3 bg-white shadow-md">
-                    <a className="py-2 border-b">{t("menu.home")}</a>
-                    <a className="py-2 border-b">{t("menu.about")}</a>
-                    <a className="py-2 border-b">{t("menu.services")}</a>
-                    <a className="py-2 border-b">{t("menu.contact")}</a>
+                    <Link href="/" className="py-2 border-b">{t("menu.home")}</Link>
+                    <Link href="/about" className="py-2 border-b">{t("menu.about")}</Link>
+                    <Link href="/services" className="py-2 border-b">{t("menu.services")}</Link>
+                    <Link href="/contact" className="py-2 border-b">{t("menu.contact")}</Link>
 
-                    <a className="mt-2 text-center px-4 py-2 bg-blue-600 text-white rounded-lg">
+                    <Link href="/contact" className="mt-2 text-center px-4 py-2 bg-primary text-white">
                         {t("cta.contact")}
-                    </a>
+                    </Link>
                 </div>
             )}
         </nav>

@@ -1,0 +1,17 @@
+{
+  "about_banner": {
+      "title": "Who We Are",
+      "subtitle": "A trusted logistics partner built on integrity, efficiency, and commitment.",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+  },
+  "services_banner": {
+      "title": "Our Services",
+      "subtitle": "End-to-end logistics solutions tailored to your business needs.",
+      "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
+  },
+  "contact_banner": {
+      "title": "Get in Touch",
+      "subtitle": "Let's talk about how we can support your logistics operations.",
+      "image": "https://images.unsplash.com/photo-1423666639041-f56000c27a9a"
+  }
+}

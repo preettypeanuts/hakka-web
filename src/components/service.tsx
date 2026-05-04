@@ -1,7 +1,8 @@
 'use client';
 
-import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import Image from "next/image";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 type ServiceItem = {
   title: string;
@@ -18,56 +19,125 @@ export const FeaturedService = ({ data }: {
     items: ServiceItem[];
   };
 }) => {
-
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeImage = data.items[activeIndex].image;
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (dir: "left" | "right") => {
+    const next = dir === "right"
+      ? Math.min(activeIndex + 1, data.items.length - 1)
+      : Math.max(activeIndex - 1, 0);
+    setActiveIndex(next);
+    const card = scrollRef.current?.children[next] as HTMLElement;
+    card?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  };
 
   return (
-    <section className="relative bg-thirdColor overflow-hidden">
+    <section className="bg-[#f0f2f5] spacing overflow-hidden">
+      <div className="margin">
 
-      <div
-        className="absolute inset-0 opacity-90 bg-cover bg-center transition-all duration-500"
-        style={{ backgroundImage: `url(${activeImage})`,
-           backgroundAttachment: "fixed",}}
+        {/* Top — label */}
+        <div className="flex justify-end mb-6">
+          <span className="text-xs tracking-widest uppercase text-neutral-400 border border-neutral-300 px-3 py-1">
+            [ {data.title} ]
+          </span>
+        </div>
 
-      />
+        {/* Main grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 items-start">
 
-      <div className="relative margin spacing">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Left — text + nav */}
+          <div className="flex flex-col justify-between h-full gap-16">
+            <div>
+              <h2 className="text-[clamp(32px,4vw,56px)] font-bold text-neutral-900 leading-tight mb-6">
+                {data.title}
+                <span className="font-black">{data.title.split(" ").slice(2).join(" ")}</span>
+              </h2>
+              <p className="text-neutral-500 text-sm leading-relaxed max-w-sm">
+                {data.subtitle}
+              </p>
+            </div>
 
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900">
-              {data.title}
-            </h2>
-            <p className="text-neutral-500 mt-2">
-              {data.subtitle}
-            </p>
+            {/* Prev / Next */}
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => scroll("left")}
+                disabled={activeIndex === 0}
+                className="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-500 hover:border-neutral-900 hover:text-neutral-900 transition-all disabled:opacity-30"
+              >
+                <ArrowLeft className="size-4" />
+              </button>
+
+              {/* Progress bar */}
+              <div className="flex-1 h-0.5 bg-neutral-200 relative">
+                <div
+                  className="absolute top-0 left-0 h-full bg-neutral-800 transition-all duration-300"
+                  style={{ width: `${((activeIndex + 1) / data.items.length) * 100}%` }}
+                />
+              </div>
+
+              <button
+                onClick={() => scroll("right")}
+                disabled={activeIndex === data.items.length - 1}
+                className="w-10 h-10 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-500 hover:border-neutral-900 hover:text-neutral-900 transition-all disabled:opacity-30"
+              >
+                <ArrowRight className="size-4" />
+              </button>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          {/* Right — cards scroll */}
+          <div
+            ref={scrollRef}
+            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2 scrollbar-hide"
+          >
             {data.items.map((item, i) => {
               const message = encodeURIComponent(
                 data.wa_template.replace("{title}", item.title)
               );
+              const isActive = i === activeIndex;
 
               return (
                 <div
                   key={i}
                   onClick={() => setActiveIndex(i)}
-                  className={`rounded-main group aspect-square flex flex-col justify-between p-6 border cursor-pointer duration-300 ${i === activeIndex ? "bg-mainColor text-white hover:bg-secondaryDark" : "bg-white hover:bg-lightColor"
-                    }`}
+                  className={`snap-start shrink-0 w-65 sm:w-75 cursor-pointer group transition-all duration-300 ${isActive ? "opacity-100" : "opacity-60 hover:opacity-80"}`}
                 >
-                  <h3 className="text-2xl font-medium">{item.title}</h3>
-                  <p>{item.description}</p>
+                  {/* Image */}
+                  <div className="relative h-85 w-full overflow-hidden rounded-2xl mb-4">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
 
-                  <a
-                    href={`https://wa.me/6281292749915?text=${message}`}
-                    onClick={(e) => e.stopPropagation()}
-                    className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold group-hover:underline cursor-pointer ${i === activeIndex ? "text-white" : "text-mainColor group-hover:text-secondaryDark"
-                      }`}
-                  >
-                    {data.cta} <ArrowRight className="size-5 group-hover:translate-x-2 duration-200"/>
-                  </a>
+                    <div className={`absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-4 transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>
+                      {item.description.split("\n").map((line, idx) => (
+                        <p
+                          key={idx}
+                          className="text-white"
+                        >
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+
+                    
+                  </div>
+
+                  {/* Title + CTA */}
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-semibold text-neutral-800">
+                      {item.title}
+                    </h3>
+                    <a
+                      href={`https://wa.me/6281292749915?text=${message}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-[11px] uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors"
+                    >
+                      {data.cta}
+                    </a>
+                  </div>
                 </div>
               );
             })}
