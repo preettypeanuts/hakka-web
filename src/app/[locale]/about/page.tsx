@@ -1,5 +1,6 @@
 import { AboutUs } from "@/components/about-us";
 import { PageHero } from "@/components/page-hero";
+import { ValuesSection } from "@/components/value";
 import { VisionMissionSection } from "@/components/vision-mission";
 import { getTranslations } from "next-intl/server";
 
@@ -15,6 +16,7 @@ export default async function AboutPage() {
       />
       <AboutUs />
       <VisionMissionSection />
+      <ValuesSection />
     </>
   );
 }

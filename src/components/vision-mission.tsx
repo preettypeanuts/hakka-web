@@ -21,7 +21,7 @@ export const VisionMissionSection = () => {
                 {/* Vision */}
                 <div className="
                     relative p-8 rounded-main border border-neutral-200 
-                    bg-linear-to-br from-white to-neutral-50
+                    bg-linear-to-br from-white to-neutral-50 border-l-4 border-l-mainColor
                     hover:shadow-md transition-all duration-300
                 ">
                     <p className="text-sm uppercase tracking-widest text-neutral-400 mb-3">
@@ -31,13 +31,11 @@ export const VisionMissionSection = () => {
                     <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 leading-snug">
                         {t("vision")}
                     </h3>
-
-                    <div className="absolute top-0 left-0 w-1 h-full bg-mainColor rounded-l-main" />
                 </div>
 
                 {/* Mission */}
                 <div className="
-                    relative p-8 rounded-main border border-neutral-200 
+                    relative p-8 rounded-main border border-neutral-200  border-l-4 border-l-secondaryColor
                     bg-linear-to-br from-neutral-50 to-white
                     hover:shadow-md transition-all duration-300
                 ">
@@ -61,8 +59,6 @@ export const VisionMissionSection = () => {
                             </div>
                         ))}
                     </div>
-
-                    <div className="absolute top-0 left-0 w-1 h-full bg-secondaryColor rounded-l-main" />
                 </div>
 
             </div>
