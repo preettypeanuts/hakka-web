@@ -1,3 +1,4 @@
+import { ContactList } from "@/components/contact-list";
 import { PageHero } from "@/components/page-hero";
 import { getTranslations } from "next-intl/server";
 
@@ -11,6 +12,7 @@ export default async function ContactPage() {
         subtitle={t("subtitle")}
         image={t("image")}
       />
+      <ContactList />
     </>
   );
 }

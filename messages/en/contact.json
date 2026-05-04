@@ -8,6 +8,8 @@
         "head_office": "Jakarta - PIK",
         "email": "info@hht-logistics.com",
         "phone": "+62 8xxx xxxx xxxx",
+        "email_label": "Mail",
+        "phone_label": "Phone",
         "map_embed": "https://www.google.com/maps?q=PIK+Jakarta&output=embed",
         "cities": [
             "Medan",
