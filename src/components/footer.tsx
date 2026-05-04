@@ -1,5 +1,6 @@
+import { Link } from "@/i18n/navitagion";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+
 import Image from "next/image";
 
 export const Footer = () => {

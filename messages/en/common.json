@@ -11,12 +11,12 @@
               {
                 "name": "Sea Freight",
                 "desc": "Cost-efficient shipping for large-scale cargo.",
-                "href": "/services/sea-freight"
+                "href": "/service/sea-freight"
               },
               {
                 "name": "Air Freight",
                 "desc": "Fast and secure delivery for urgent shipments.",
-                "href": "/services/air-freight"
+                "href": "/service/air-freight"
               }
             ]
           },
@@ -26,17 +26,17 @@
               {
                 "name": "Inbound & Outbound Logistics",
                 "desc": "Structured goods flow management.",
-                "href": "/services/logistics"
+                "href": "/service/logistics"
               },
               {
                 "name": "Interinsular Shipping",
                 "desc": "Distribution across Indonesian islands.",
-                "href": "/services/interinsular"
+                "href": "/service/interinsular"
               },
               {
                 "name": "Trucking",
                 "desc": "Flexible land transportation services.",
-                "href": "/services/trucking"
+                "href": "/service/trucking"
               }
             ]
           },
@@ -46,17 +46,17 @@
               {
                 "name": "Warehouse",
                 "desc": "Secure storage with inventory system.",
-                "href": "/services/warehouse"
+                "href": "/service/warehouse"
               },
               {
-                "name": "Export & Import",
+                "name": "Export & Import Handling",
                 "desc": "Complete handling with documentation.",
-                "href": "/services/export-import"
+                "href": "/service/export-import"
               },
               {
                 "name": "PPJK (Customs Clearance)",
                 "desc": "Professional customs handling.",
-                "href": "/services/ppjk"
+                "href": "/service/ppjk"
               }
             ]
           }

@@ -11,12 +11,12 @@
               {
                 "name": "Pengiriman Laut",
                 "desc": "Solusi hemat untuk pengiriman skala besar.",
-                "href": "/services/sea-freight"
+                "href": "/service/sea-freight"
               },
               {
                 "name": "Pengiriman Udara",
                 "desc": "Pengiriman cepat dan aman untuk kebutuhan mendesak.",
-                "href": "/services/air-freight"
+                "href": "/service/air-freight"
               }
             ]
           },
@@ -24,19 +24,19 @@
             "title": "Solusi Logistik",
             "items": [
               {
-                "name": "Inbound & Outbound Logistics",
+                "name": "Logistik Masuk & Keluar (Inbound & Outbound)",
                 "desc": "Manajemen arus barang masuk dan keluar secara terstruktur.",
-                "href": "/services/logistics"
+                "href": "/service/logistics"
               },
               {
                 "name": "Pengiriman Antar Pulau",
                 "desc": "Distribusi ke berbagai wilayah di Indonesia.",
-                "href": "/services/interinsular"
+                "href": "/service/interinsular"
               },
               {
-                "name": "Trucking",
+                "name": "Transportasi Darat (Trucking)",
                 "desc": "Transportasi darat yang fleksibel dan terkoordinasi.",
-                "href": "/services/trucking"
+                "href": "/service/trucking"
               }
             ]
           },
@@ -44,19 +44,19 @@
             "title": "Layanan Pendukung",
             "items": [
               {
-                "name": "Warehouse",
+                "name": "Pergudangan (Warehouse)",
                 "desc": "Penyimpanan aman dengan sistem manajemen modern.",
-                "href": "/services/warehouse"
+                "href": "/service/warehouse"
               },
               {
-                "name": "Ekspor & Impor",
+                "name": "Penanganan Ekspor & Impor",
                 "desc": "Penanganan lengkap termasuk dokumentasi.",
-                "href": "/services/export-import"
+                "href": "/service/export-import"
               },
               {
-                "name": "PPJK (Kepabeanan)",
+                "name": "Jasa Kepabeanan (PPJK)",
                 "desc": "Pengurusan bea cukai secara profesional.",
-                "href": "/services/ppjk"
+                "href": "/service/ppjk"
               }
             ]
           }

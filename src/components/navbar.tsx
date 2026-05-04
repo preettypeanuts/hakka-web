@@ -17,6 +17,7 @@ import {
     Package,
     Phone
 } from "lucide-react";
+import { toSlug } from "@/lib/slugify";
 
 export const Navbar = () => {
     const t = useTranslations("navbar");
@@ -170,9 +171,8 @@ export const Navbar = () => {
             <div
                 onMouseEnter={openMega}
                 onMouseLeave={closeMega}
-                className={`
-        fixed left-0 top-0 w-full z-40 transition-all duration-300
-        ${activeMega
+                className={`fixed left-0 top-0 w-full z-40 transition-all duration-300
+                        ${activeMega
                         ? "opacity-100 translate-y-0 pointer-events-auto"
                         : "opacity-0 -translate-y-2 pointer-events-none"
                     }
@@ -193,7 +193,7 @@ export const Navbar = () => {
                                     {group.items.map((item, j) => (
                                         <Link
                                             key={j}
-                                            href={item.href}
+                                            href={`/service/${toSlug(item.name)}`}
                                             className="
                         group p-4 rounded-secondary border border-neutral-100 bg-neutral-100
                         hover:border-mainColor hover:bg-mainColor/5
@@ -317,15 +317,9 @@ export const Navbar = () => {
                                             {group.items.map((item, j) => (
                                                 <Link
                                                     key={j}
-                                                    href={item.href}
+                                                    href={`/service/${toSlug(item.name)}`}
                                                     onClick={() => setIsOpen(false)}
-                                                    className="
-                      flex gap-3 items-start
-                      p-4 rounded-xl border border-neutral-200
-                      bg-neutral-50
-                      hover:bg-mainColor/5
-                      transition
-                    "
+                                                    className="flex gap-3 items-start p-4 rounded-xl border border-neutral-200 bg-neutral-50 hover:bg-mainColor/5 transition"
                                                 >
                                                     {/* ICON */}
                                                     <div className="text-mainColor mt-1">

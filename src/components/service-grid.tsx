@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "./ui/button";
+import { toSlug } from "@/lib/slugify";
+import { Link } from "@/i18n/navitagion";
 
 type ServiceItem = {
     title: string;
@@ -18,9 +19,6 @@ type Props = {
     subtitle?: string;
     items: ServiceItem[];
 };
-
-const toSlug = (title: string) =>
-    title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 export const ServiceGrid = ({ title, subtitle, items }: Props) => {
     const featured = items.filter(item => item.featured);
@@ -45,7 +43,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                 {featured.map((item, i) => (
                     <Link
                         key={i}
-                        href={`/services/${toSlug(item.title)}`}
+                        href={`/service/${toSlug(item.title)}`}
                         className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white hover:shadow-xl transition-all duration-300 flex flex-col"
                     >
                         <div className="relative h-64 overflow-hidden shrink-0">
@@ -99,7 +97,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                 {rest.map((item, i) => (
                     <Link
                         key={i}
-                        href={`/services/${toSlug(item.title)}`}
+                        href={`/service/${toSlug(item.title)}`}
                         className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                     >
                         {/* Image */}

@@ -37,23 +37,115 @@
         "items": [
             {
                 "title": "Sea Freight",
-                "description": "Ocean shipping solutions for large volumes with cost efficiency and structured schedules.",
-                "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
+                "featured": true,
+                "desc": "End-to-end ocean freight solutions designed for large-scale and long-distance shipments.",
+                "benefit": "More cost-efficient for high-volume cargo.",
+                "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
+                "details": [
+                    "Full Container Load (FCL) and Less than Container Load (LCL) options",
+                    "Optimized route and vessel scheduling",
+                    "Port handling and coordination",
+                    "Cargo consolidation and tracking",
+                    "Reliable transit time management"
+                ]
             },
             {
                 "title": "Air Freight",
-                "description": "Fast delivery for urgent needs with clear tracking systems.",
-                "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c"
+                "featured": false,
+                "desc": "Fast and secure air transportation for time-sensitive and high-value shipments.",
+                "benefit": "Shorter lead time with enhanced cargo security.",
+                "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
+                "details": [
+                    "Priority and express shipment handling",
+                    "Global airline network access",
+                    "Real-time shipment tracking",
+                    "Secure handling for fragile and high-value goods",
+                    "Flexible scheduling for urgent deliveries"
+                ]
             },
             {
-                "title": "Trucking & Interinsular",
-                "description": "Intercity and inter-island distribution with coordinated fleets.",
-                "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "title": "Export & Import Handling",
+                "featured": true,
+                "desc": "Comprehensive support for export and import processes, including documentation and compliance.",
+                "benefit": "Faster clearance with minimized administrative risk.",
+                "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
+                "details": [
+                    "Complete documentation management",
+                    "Customs clearance coordination",
+                    "Regulatory compliance handling",
+                    "Duty and tax consultation",
+                    "End-to-end shipment processing"
+                ]
             },
             {
-                "title": "Export & Import Handling (PPJK)",
-                "description": "Professional customs and documentation handling in compliance with regulations.",
-                "image": "https://images.unsplash.com/photo-1698392275407-e6f844224692?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "title": "Inbound & Outbound Logistics",
+                "featured": false,
+                "desc": "Efficient management of incoming and outgoing goods to streamline supply chain operations.",
+                "benefit": "Better inventory accuracy and distribution control.",
+                "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
+                "details": [
+                    "Inventory flow management",
+                    "Distribution planning and execution",
+                    "Warehouse integration",
+                    "Real-time stock monitoring",
+                    "Supply chain optimization"
+                ]
+            },
+            {
+                "title": "Interinsular Shipping",
+                "featured": false,
+                "desc": "Reliable inter-island distribution services supported by an extensive logistics network.",
+                "benefit": "Expand your business reach across regions.",
+                "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
+                "details": [
+                    "Nationwide island coverage",
+                    "Flexible shipping schedules",
+                    "Multi-modal transportation support",
+                    "Cargo consolidation services",
+                    "Efficient last-mile coordination"
+                ]
+            },
+            {
+                "title": "Trucking",
+                "featured": false,
+                "desc": "Land transportation services with a well-managed and coordinated fleet.",
+                "benefit": "Flexible delivery from local to nationwide scale.",
+                "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+                "details": [
+                    "Dedicated and shared trucking options",
+                    "Fleet monitoring and coordination",
+                    "Route optimization for efficiency",
+                    "Door-to-door delivery service",
+                    "Support for various cargo types"
+                ]
+            },
+            {
+                "title": "Warehouse",
+                "featured": false,
+                "desc": "Secure and organized storage solutions with advanced inventory management systems.",
+                "benefit": "Improved stock security and operational efficiency.",
+                "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+                "details": [
+                    "Short-term and long-term storage",
+                    "Inventory management system (IMS)",
+                    "Order fulfillment services",
+                    "Stock monitoring and reporting",
+                    "Safe and controlled storage environment"
+                ]
+            },
+            {
+                "title": "PPJK (Customs Clearance)",
+                "featured": false,
+                "desc": "Professional customs brokerage services to ensure smooth import and export clearance.",
+                "benefit": "Avoid delays and regulatory complications.",
+                "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+                "details": [
+                    "Customs documentation processing",
+                    "Regulatory compliance assurance",
+                    "Import/export licensing support",
+                    "Duty and tax calculation assistance",
+                    "Fast and reliable clearance handling"
+                ]
             }
         ]
     },

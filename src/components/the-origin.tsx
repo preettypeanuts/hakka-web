@@ -12,7 +12,7 @@ export const OriginSection = () => {
                     {t("label")}
                 </h2>
 
-                <div className="text-3xl">
+                <div className="text-xl md:text-3xl">
                     <p className="text-neutral-600 indent-15">
                         {t("paragraph_start")}{" "}
                         {CITIES.map((city, i) => (
