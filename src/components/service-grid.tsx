@@ -50,8 +50,9 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                             <Image
                                 src={`${item.image}?auto=format&fit=crop&w=1200&q=80`}
                                 alt={item.title}
-                                fill
-                                className="object-cover group-hover:scale-105 transition duration-500"
+                                width={500}
+                                height={500}
+                                className="object-cover group-hover:scale-105 transition duration-500 w-full h-full"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                             <span className="absolute top-4 left-4 text-xs font-semibold uppercase tracking-widest text-white bg-mainColor px-3 py-1 rounded-full">
@@ -105,8 +106,9 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                             <Image
                                 src={`${item.image}?auto=format&fit=crop&w=800&q=80`}
                                 alt={item.title}
-                                fill
-                                className="object-cover group-hover:scale-105 transition duration-500"
+                                width={500}
+                                height={500}
+                                className="object-cover group-hover:scale-105 transition duration-500 w-full h-full"
                             />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition" />
                         </div>

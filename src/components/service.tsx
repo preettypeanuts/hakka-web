@@ -104,8 +104,9 @@ export const FeaturedService = ({ data }: {
                     <Image
                       src={item.image}
                       alt={item.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      width={500}
+                      height={500}
+                      className="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full"
                     />
 
                     <div className={`absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-4 transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>

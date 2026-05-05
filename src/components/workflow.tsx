@@ -42,8 +42,9 @@ export const WorkflowSection = ({ title, steps }: Props) => {
                                         <Image
                                             src={`${step.image}?auto=format&fit=crop&w=800&q=80`}
                                             alt={step.title}
-                                            fill
-                                            className="object-cover"
+                                            width={500}
+                                            height={500}
+                                            className="object-cover w-full h-full"
                                         />
                                     </div>
                                 </div>

@@ -14,8 +14,9 @@ export const AboutUs = () => {
                     <Image
                         src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt={t("title")}
-                        fill
-                        className="object-cover"
+                        width={500}
+                        height={500}
+                        className="object-cover w-full h-full"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     {/* Subtle overlay gradient */}

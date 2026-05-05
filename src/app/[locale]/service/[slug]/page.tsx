@@ -161,8 +161,9 @@ export default async function ServiceDetailPage({ params }: Props) {
                                     <Image
                                         src={`${item.image}?auto=format&fit=crop&w=800&q=80`}
                                         alt={item.title}
-                                        fill
-                                        className="object-cover group-hover:scale-105 transition duration-500"
+                                        width={500}
+                                        height={500}
+                                        className="object-cover group-hover:scale-105 transition duration-500 w-full h-full"
                                     />
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition" />
                                 </div>
