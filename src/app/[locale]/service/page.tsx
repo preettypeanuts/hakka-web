@@ -9,6 +9,8 @@ type ServiceItem = {
   benefit: string;
   image: string;
   details: string[];
+  featured: boolean;
+  slug: string;
 };
 
 export default async function ServicePage() {

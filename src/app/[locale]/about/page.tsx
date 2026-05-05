@@ -19,6 +19,7 @@ export default async function AboutPage() {
       desc: string;
       benefit: string;
       image: string;
+      slug: string;
     }[],
   };
 

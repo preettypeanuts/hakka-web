@@ -27,7 +27,13 @@ export const Navbar = () => {
 
     const serviceGroups = t.raw("menu.services.groups") as {
         title: string;
-        items: { name: string; desc: string; href?: string }[];
+        items: {
+            name: string; 
+            desc: string; 
+            href?: string;
+            slug: string; 
+        
+        }[];
     }[];
 
     const megaCta = t.raw("cta_mega") as {

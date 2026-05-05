@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { toSlug } from "@/lib/slugify";
 import { Link } from "@/i18n/navitagion";
 
 type ServiceItem = {
@@ -12,6 +11,7 @@ type ServiceItem = {
     image: string;
     details?: string[];
     featured?: boolean;
+    slug: string;
 };
 
 type Props = {
@@ -43,7 +43,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                 {featured.map((item, i) => (
                     <Link
                         key={i}
-                        href={`/service/${toSlug(item.title)}`}
+                        href={`/service/${item.slug}`}
                         className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white hover:shadow-xl transition-all duration-300 flex flex-col"
                     >
                         <div className="relative h-64 overflow-hidden shrink-0">
@@ -81,7 +81,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                             <div className="flex items-center justify-between border-t pt-4 mt-auto">
                                 <span className="text-sm font-semibold text-mainColor">✓ {item.benefit}</span>
                                 <Button
-                                size={"lg"}
+                                    size={"lg"}
                                     variant={"secondary"}
                                     className="font-medium text-neutral-700 group-hover:text-mainColor transition hover:bg-mainColor hover:text-white">
                                     Explore →
@@ -97,7 +97,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                 {rest.map((item, i) => (
                     <Link
                         key={i}
-                        href={`/service/${toSlug(item.title)}`}
+                        href={`/service/${item.slug}`}
                         className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                     >
                         {/* Image */}

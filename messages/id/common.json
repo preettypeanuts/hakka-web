@@ -11,12 +11,12 @@
               {
                 "name": "Pengiriman Laut",
                 "desc": "Solusi hemat untuk pengiriman skala besar.",
-                "href": "/service/sea-freight"
+                "slug": "sea-freight"
               },
               {
                 "name": "Pengiriman Udara",
                 "desc": "Pengiriman cepat dan aman untuk kebutuhan mendesak.",
-                "href": "/service/air-freight"
+                "slug": "air-freight"
               }
             ]
           },
@@ -26,17 +26,17 @@
               {
                 "name": "Logistik Masuk & Keluar (Inbound & Outbound)",
                 "desc": "Manajemen arus barang masuk dan keluar secara terstruktur.",
-                "href": "/service/logistics"
+                "slug": "inbound-outbound-logistics"
               },
               {
                 "name": "Pengiriman Antar Pulau",
                 "desc": "Distribusi ke berbagai wilayah di Indonesia.",
-                "href": "/service/interinsular"
+                "slug": "interinsular-shipping"
               },
               {
                 "name": "Transportasi Darat (Trucking)",
                 "desc": "Transportasi darat yang fleksibel dan terkoordinasi.",
-                "href": "/service/trucking"
+                "slug": "trucking"
               }
             ]
           },
@@ -46,17 +46,17 @@
               {
                 "name": "Pergudangan (Warehouse)",
                 "desc": "Penyimpanan aman dengan sistem manajemen modern.",
-                "href": "/service/warehouse"
+                "slug": "warehouse"
               },
               {
                 "name": "Penanganan Ekspor & Impor",
                 "desc": "Penanganan lengkap termasuk dokumentasi.",
-                "href": "/service/export-import"
+                "slug": "export-import-handling"
               },
               {
                 "name": "Jasa Kepabeanan (PPJK)",
                 "desc": "Pengurusan bea cukai secara profesional.",
-                "href": "/service/ppjk"
+                "slug": "ppjk-customs-clearance"
               }
             ]
           }

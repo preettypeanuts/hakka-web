@@ -1,12 +1,12 @@
 "use client";
 
 import { Link } from "@/i18n/navitagion";
-import { toSlug } from "@/lib/slugify";
 import { getNavbarIcon } from "./getNavbarIcon";
 
 interface ServiceItem {
     name: string;
     desc: string;
+    slug: string;
     href?: string;
 }
 
@@ -21,12 +21,12 @@ export const MegaMenuServiceCard = ({
     onClick,
     compact = false,
 }: MegaMenuServiceCardProps) => {
-    const href = item.href ?? `/service/${toSlug(item.name)}`;
+    const href = item.href ?? `/service/${item.slug}`;
 
     if (compact) {
         return (
             <Link
-                href={`/service/${toSlug(item.name)}`}
+                href={`/service/${item.slug}`}
                 onClick={onClick}
                 className="flex gap-3 items-start p-4 rounded-xl border border-neutral-200 bg-neutral-50 hover:bg-mainColor/5 transition"
             >
@@ -41,7 +41,7 @@ export const MegaMenuServiceCard = ({
 
     return (
         <Link
-            href={`/service/${toSlug(item.name)}`}
+            href={`/service/${item.slug}`}
             className="
                 group p-4 rounded-secondary border border-neutral-100 bg-neutral-100
                 hover:border-mainColor hover:bg-mainColor/5

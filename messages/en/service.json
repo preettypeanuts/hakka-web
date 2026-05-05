@@ -12,6 +12,7 @@
     "items": [
       {
         "title": "Sea Freight",
+        "slug": "sea-freight",
         "featured": true,
         "description": "End-to-end ocean freight solutions designed for large-scale and long-distance shipments.",
         "benefit": "More cost-efficient for high-volume cargo.",
@@ -26,6 +27,7 @@
       },
       {
         "title": "Air Freight",
+        "slug": "air-freight",
         "featured": false,
         "description": "Fast and secure air transportation for time-sensitive and high-value shipments.",
         "benefit": "Shorter lead time with enhanced cargo security.",
@@ -40,6 +42,7 @@
       },
       {
         "title": "Export & Import Handling",
+        "slug": "export-import-handling",
         "featured": true,
         "description": "Comprehensive support for export and import processes, including documentation and compliance.",
         "benefit": "Faster clearance with minimized administrative risk.",
@@ -54,6 +57,7 @@
       },
       {
         "title": "Inbound & Outbound Logistics",
+        "slug": "inbound-outbound-logistics",
         "featured": false,
         "description": "Efficient management of incoming and outgoing goods to streamline supply chain operations.",
         "benefit": "Better inventory accuracy and distribution control.",
@@ -68,6 +72,7 @@
       },
       {
         "title": "Interinsular Shipping",
+        "slug": "interinsular-shipping",
         "featured": false,
         "description": "Reliable inter-island distribution services supported by an extensive logistics network.",
         "benefit": "Expand your business reach across regions.",
@@ -82,6 +87,7 @@
       },
       {
         "title": "Trucking",
+        "slug": "trucking",
         "featured": false,
         "description": "Land transportation services with a well-managed and coordinated fleet.",
         "benefit": "Flexible delivery from local to nationwide scale.",
@@ -96,6 +102,7 @@
       },
       {
         "title": "Warehouse",
+        "slug": "warehouse",
         "featured": false,
         "description": "Secure and organized storage solutions with advanced inventory management systems.",
         "benefit": "Improved stock security and operational efficiency.",
@@ -110,6 +117,7 @@
       },
       {
         "title": "PPJK (Customs Clearance)",
+        "slug": "ppjk-customs-clearance",
         "featured": false,
         "description": "Professional customs brokerage services to ensure smooth import and export clearance.",
         "benefit": "Avoid delays and regulatory complications.",

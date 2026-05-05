@@ -11,12 +11,12 @@
               {
                 "name": "Sea Freight",
                 "desc": "Cost-efficient shipping for large-scale cargo.",
-                "href": "/service/sea-freight"
+                "slug": "sea-freight"
               },
               {
                 "name": "Air Freight",
                 "desc": "Fast and secure delivery for urgent shipments.",
-                "href": "/service/air-freight"
+                "slug": "air-freight"
               }
             ]
           },
@@ -26,17 +26,17 @@
               {
                 "name": "Inbound & Outbound Logistics",
                 "desc": "Structured goods flow management.",
-                "href": "/service/logistics"
+                "slug": "inbound-outbound-logistics"
               },
               {
                 "name": "Interinsular Shipping",
                 "desc": "Distribution across Indonesian islands.",
-                "href": "/service/interinsular"
+                "slug": "interinsular-shipping"
               },
               {
                 "name": "Trucking",
                 "desc": "Flexible land transportation services.",
-                "href": "/service/trucking"
+                "slug": "trucking"
               }
             ]
           },
@@ -46,17 +46,17 @@
               {
                 "name": "Warehouse",
                 "desc": "Secure storage with inventory system.",
-                "href": "/service/warehouse"
+                "slug": "warehouse"
               },
               {
                 "name": "Export & Import Handling",
                 "desc": "Complete handling with documentation.",
-                "href": "/service/export-import"
+                "slug": "export-import-handling"
               },
               {
                 "name": "PPJK (Customs Clearance)",
                 "desc": "Professional customs handling.",
-                "href": "/service/ppjk"
+                "slug": "ppjk-customs-clearance"
               }
             ]
           }

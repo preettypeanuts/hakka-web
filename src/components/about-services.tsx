@@ -3,13 +3,13 @@ import { SectionTitle } from "./section-title";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navitagion";
-import { toSlug } from "@/lib/slugify";
 
 type ServiceItem = {
     title: string;
     desc: string;
     benefit: string;
     image: string;
+    slug: string;
 };
 
 type AboutServiceData = {
@@ -40,7 +40,7 @@ export const AboutService = ({ data }: { data: AboutServiceData }) => {
                 {data.items.map((item, i) => (
                     <Link
                         key={i}
-                        href={`/service/${toSlug(item.title)}`}
+                        href={`/service/${item.slug}`}
                         className={`min-w-80 flex flex-col group
                             ${i === 0 && "left-margin"}
                             ${i === data.items.length - 1 && "right-margin"}

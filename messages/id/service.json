@@ -12,6 +12,7 @@
     "items": [
       {
         "title": "Pengiriman Laut",
+        "slug": "sea-freight",
         "featured": true,
         "description": "Solusi pengiriman via laut secara menyeluruh yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
         "benefit": "Lebih hemat biaya untuk pengiriman dalam volume besar.",
@@ -26,6 +27,7 @@
       },
       {
         "title": "Pengiriman Udara",
+        "slug": "air-freight",
         "featured": false,
         "description": "Layanan transportasi udara yang cepat dan aman untuk pengiriman bernilai tinggi dan sensitif waktu.",
         "benefit": "Waktu pengiriman lebih cepat dengan tingkat keamanan tinggi.",
@@ -40,6 +42,7 @@
       },
       {
         "title": "Penanganan Ekspor & Impor",
+        "slug": "export-import-handling",
         "featured": true,
         "description": "Dukungan lengkap untuk proses ekspor dan impor, termasuk pengurusan dokumen dan kepatuhan regulasi.",
         "benefit": "Proses clearance lebih cepat dengan risiko administrasi yang minim.",
@@ -54,6 +57,7 @@
       },
       {
         "title": "Logistik Masuk & Keluar (Inbound & Outbound)",
+        "slug": "inbound-outbound-logistics",
         "featured": false,
         "description": "Pengelolaan arus barang masuk dan keluar secara efisien untuk mendukung kelancaran rantai pasok.",
         "benefit": "Kontrol distribusi dan akurasi inventori yang lebih baik.",
@@ -68,6 +72,7 @@
       },
       {
         "title": "Pengiriman Antar Pulau",
+        "slug": "interinsular-shipping",
         "featured": false,
         "description": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas di Indonesia.",
         "benefit": "Memperluas jangkauan bisnis ke berbagai wilayah.",
@@ -82,6 +87,7 @@
       },
       {
         "title": "Transportasi Darat (Trucking)",
+        "slug": "trucking",
         "featured": false,
         "description": "Layanan pengiriman darat dengan armada yang terkelola secara profesional dan terkoordinasi dengan baik.",
         "benefit": "Pengiriman fleksibel dari skala lokal hingga nasional.",
@@ -96,6 +102,7 @@
       },
       {
         "title": "Pergudangan (Warehouse)",
+        "slug": "warehouse",
         "featured": false,
         "description": "Solusi penyimpanan yang aman, rapi, dan terorganisir dengan sistem manajemen modern.",
         "benefit": "Keamanan stok dan efisiensi operasional yang lebih optimal.",
@@ -110,6 +117,7 @@
       },
       {
         "title": "Jasa Kepabeanan (PPJK)",
+        "slug": "ppjk-customs-clearance",
         "featured": false,
         "description": "Layanan profesional untuk pengurusan kepabeanan guna memastikan kelancaran proses ekspor dan impor.",
         "benefit": "Menghindari keterlambatan serta kendala regulasi.",

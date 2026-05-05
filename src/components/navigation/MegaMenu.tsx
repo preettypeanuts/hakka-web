@@ -7,7 +7,7 @@ import { MegaMenuServiceCard } from "./MegaMenuServiceCard";
 
 interface ServiceGroup {
     title: string;
-    items: { name: string; desc: string; href?: string }[];
+    items: { name: string; desc: string; href?: string; slug: string }[];
 }
 
 interface MegaCta {

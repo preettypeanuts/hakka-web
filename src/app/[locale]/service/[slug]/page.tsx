@@ -1,6 +1,5 @@
 import { ServiceCTA } from "@/components/service-cta";
 import { Link } from "@/i18n/navitagion";
-import { toSlug } from "@/lib/slugify";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -12,8 +11,8 @@ type ServiceItem = {
     image: string;
     details?: string[];
     featured?: boolean;
+    slug: string;
 };
-
 
 type Props = {
     params: Promise<{ slug: string; locale: string }>;
@@ -24,12 +23,15 @@ export default async function ServiceDetailPage({ params }: Props) {
     const t = await getTranslations("all_services");
 
     const items = t.raw("items") as ServiceItem[];
-    const service = items.find((item) => toSlug(item.title) === slug);
+
+    // ✅ match langsung pakai slug
+    const service = items.find((item) => item.slug === slug);
 
     if (!service) notFound();
 
+    // ✅ related juga pakai slug
     const related = items
-        .filter((item) => toSlug(item.title) !== slug)
+        .filter((item) => item.slug !== slug)
         .slice(0, 3);
 
     return (
@@ -74,7 +76,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                     {/* Left — main info */}
                     <div className="lg:col-span-2 space-y-10">
 
-                        {/* Description */}
                         <div>
                             <h2 className="text-xl font-semibold mb-3">Overview</h2>
                             <p className="text-neutral-600 leading-relaxed text-base">
@@ -82,7 +83,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                             </p>
                         </div>
 
-                        {/* Details */}
                         {service.details && service.details.length > 0 && (
                             <div>
                                 <h2 className="text-xl font-semibold mb-5">What's Included</h2>
@@ -105,11 +105,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                         )}
                     </div>
 
-                    {/* Right — sticky sidebar */}
+                    {/* Right — sidebar */}
                     <div className="space-y-5">
                         <div className="sticky top-28 space-y-5">
 
-                            {/* Benefit card */}
                             <div className="rounded-2xl bg-mainColor p-6 text-white">
                                 <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">
                                     Key Benefit
@@ -119,7 +118,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                                 </p>
                             </div>
 
-                            {/* CTA card */}
                             <div className="rounded-2xl border border-neutral-200 bg-white p-6 space-y-4">
                                 <p className="text-sm font-semibold text-neutral-900">
                                     Interested in this service?
@@ -139,10 +137,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 border border-neutral-200 text-neutral-700 text-sm font-medium px-5 py-3 rounded-xl hover:bg-neutral-50 transition"
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-green-500">
-                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.5l5.797-1.452A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.897 0-3.67-.52-5.187-1.424l-.371-.22-3.844.962.998-3.742-.242-.385A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
-                                    </svg>
                                     Chat via WhatsApp
                                 </a>
                             </div>
@@ -152,7 +146,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
             </section>
 
-            {/* RELATED SERVICES */}
+            {/* RELATED */}
             {related.length > 0 && (
                 <section className="left-padding right-padding spacing border-t pt-12 bg-mainColor">
                     <h2 className="text-2xl font-semibold mb-8 text-white">Other Services</h2>
@@ -160,10 +154,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                         {related.map((item, i) => (
                             <Link
                                 key={i}
-                                href={`/service/${toSlug(item.title)}`}
+                                href={`/service/${item.slug}`}
                                 className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                             >
-                                <div className="relative h-40 overflow-hidden shrink-0">
+                                <div className="relative h-80 overflow-hidden shrink-0">
                                     <Image
                                         src={`${item.image}?auto=format&fit=crop&w=800&q=80`}
                                         alt={item.title}
@@ -189,7 +183,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </section>
             )}
 
-            {/* CTA BOTTOM */}
             <ServiceCTA />
         </>
     );

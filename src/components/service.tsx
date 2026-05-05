@@ -5,12 +5,12 @@ import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "@/i18n/navitagion";
-import { toSlug } from "@/lib/slugify";
 
 type ServiceItem = {
   title: string;
   description: string;
   image: string;
+  slug: string;
 };
 
 export const FeaturedService = ({ data }: {
@@ -117,7 +117,7 @@ export const FeaturedService = ({ data }: {
                           {line}
                         </p>
                       ))}
-                      <Link href={`/service/${toSlug(item.title)}`} onClick={(e) => e.stopPropagation()}>
+                      <Link href={`/service/${item.slug}`} onClick={(e) => e.stopPropagation()}>
                         <Button 
                         className="bg-mainColor mt-2 hover:bg-mainColor/90 text-white"
                           size={"sm"}
