@@ -22,7 +22,7 @@ type AboutServiceData = {
 export const AboutService = ({ data }: { data: AboutServiceData }) => {
     return (
         <section className="spacing">
-            <div className="flex items-center justify-between mb-8 margin">
+            <div className="flex md:flex-row flex-col md:items-center justify-between mb-8 margin">
                 <SectionTitle>{data.title}</SectionTitle>
                 <Link
                     href="/service"

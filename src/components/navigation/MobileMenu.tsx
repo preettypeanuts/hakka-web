@@ -4,10 +4,13 @@ import Image from "next/image";
 import { Link } from "@/i18n/navitagion";
 import { useTranslations } from "next-intl";
 import { MegaMenuServiceCard } from "./MegaMenuServiceCard";
+import { Button } from "../ui/button";
+import { ArrowRight, ChevronRight, Plus } from "lucide-react";
+import LanguageSwitcher from "../language-switcher";
 
 interface ServiceGroup {
     title: string;
-    items: { name: string; desc: string; href?: string }[];
+    items: { name: string; desc: string; href?: string; slug: string }[];
 }
 
 interface MobileMenuProps {
@@ -32,31 +35,44 @@ export const MobileMenu = ({ isOpen, serviceGroups, onClose }: MobileMenuProps) 
                     height={50}
                     className="h-10 w-22 object-cover"
                 />
-                <button
-                    onClick={onClose}
-                    className="p-2 rounded-full border hover:bg-neutral-100 transition"
-                >
-                    ✕
-                </button>
+                <div className="flex items-center gap-2">
+                    <LanguageSwitcher />
+                    <Button
+                        size={"icon-lg"}
+                        variant={"secondary"}
+                        onClick={onClose}
+                        className="aspect-square rounded-full border hover:bg-neutral-100 transition"
+                    >
+                        <Plus className="rotate-45 size-6" />
+                    </Button>
+                </div>
             </div>
 
             {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+            <div className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
                 {/* Main Links */}
                 <div className="space-y-4">
-                    <Link href="/" onClick={onClose} className="block text-lg font-semibold">
+                    <Link href="/" onClick={onClose} className="text-lg font-semibold text-neutral-800 mb-3 flex items-center justify-between border-b pb-2 border-lightColor">
                         {t("menu.home")}
+                        <ChevronRight className="text-neutral-400" />
                     </Link>
-                    <Link href="/about" onClick={onClose} className="block text-lg font-semibold">
+                    <Link href="/about" onClick={onClose} className="text-lg font-semibold text-neutral-800 mb-3 flex items-center justify-between border-b pb-2 border-lightColor">
                         {t("menu.about")}
+                        <ChevronRight className="text-neutral-400" />
+                    </Link>
+                    {/* Contact Link */}
+                    <Link href="/contact" onClick={onClose} className="text-lg font-semibold text-neutral-800 mb-3 flex items-center justify-between border-b pb-2 border-lightColor">
+                        {t("menu.contact")}
+                        <ChevronRight className="text-neutral-400" />
                     </Link>
                 </div>
 
                 {/* Services */}
                 <div>
-                    <p className="text-sm text-neutral-400 uppercase mb-3">
+                    <Link href="/service" onClick={onClose} className="text-lg font-semibold text-neutral-800 mb-3 flex items-center justify-between border-b pb-2 border-lightColor">
                         {t("menu.services.label")}
-                    </p>
+                        <ChevronRight className="text-neutral-400" />
+                    </Link>
 
                     <div className="space-y-6">
                         {serviceGroups.map((group, i) => (
@@ -77,10 +93,7 @@ export const MobileMenu = ({ isOpen, serviceGroups, onClose }: MobileMenuProps) 
                     </div>
                 </div>
 
-                {/* Contact Link */}
-                <Link href="/contact" onClick={onClose} className="block text-lg font-semibold">
-                    {t("menu.contact")}
-                </Link>
+
             </div>
 
             {/* CTA Fixed Bottom */}

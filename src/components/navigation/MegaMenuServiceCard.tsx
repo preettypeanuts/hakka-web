@@ -27,13 +27,22 @@ export const MegaMenuServiceCard = ({
         return (
             <Link
                 href={`/service/${item.slug}`}
-                onClick={onClick}
-                className="flex gap-3 items-start p-4 rounded-xl border border-neutral-200 bg-neutral-50 hover:bg-mainColor/5 transition"
+                className="
+                group p-4 rounded-secondary border border-neutral-100 bg-neutral-100
+                hover:border-mainColor hover:bg-mainColor/5
+                transition-all duration-300
+                hover:shadow-md hover:-translate-y-1
+                flex gap-3 items-start
+            "
             >
-                <div className="text-mainColor mt-1">{getNavbarIcon(item.name)}</div>
+                <div className="text-mainColor flex items-center justify-center rounded-third bg-otherColorDark p-3">
+                    {getNavbarIcon(item.name)}
+                </div>
                 <div>
-                    <p className="font-medium text-neutral-800">{item.name}</p>
-                    <p className="text-xs text-neutral-500">{item.desc}</p>
+                    <p className="font-medium text-neutral-800 group-hover:text-mainColor transition">
+                        {item.name}
+                    </p>
+                    <p className="text-xs text-neutral-500 leading-snug">{item.desc}</p>
                 </div>
             </Link>
         );

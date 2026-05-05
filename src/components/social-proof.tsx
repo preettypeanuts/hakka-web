@@ -20,65 +20,94 @@ export const SocialProof = () => {
     const clients = t.raw("clients") as Client[];
     const testimonials = t.raw("testimonials") as Testimonial[];
 
+    // Duplicate untuk infinite loop seamless
+    const doubled = [...clients, ...clients];
+
     return (
-        <section className="margin spacing">
+        <section className=" spacing">
 
             {/* Title */}
-            <SectionTitle>
-                {t("title")}
-            </SectionTitle>
-
-            {/* CLIENT LOGOS */}
-            <div className="flex flex-wrap gap-6 items-center mb-16">
-                {clients.map((client, i) => (
-                    <div
-                        key={i}
-                        className="flex gap-5 items-center hover:grayscale-0 transition bg-white rounded-full p-6"
-                        title={client.name}
-                    >
-                        <Image
-                            src={client.logo}
-                            alt={client.name}
-                            width={100}
-                            height={60}
-                            className="object-contain h-10 w-auto"
-                        />
-                        <p className="truncate">
-                            {client.name}
-                        </p>
-                    </div>
-                ))}
+            <div className="margin">
+                <SectionTitle>{t("title")}</SectionTitle>
             </div>
 
-            <SectionTitle>
-                {t("title_testimonials")}
-            </SectionTitle>
+            {/* CLIENT LOGOS — 2 layer infinite marquee */}
+            <div className="relative mb-16 overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
 
-            {/* TESTIMONIALS */}
-            <div className="grid md:grid-cols-3 gap-6">
-                {testimonials.map((item, i) => (
-                    <div
-                        key={i}
-                        className="p-6 border bg-otherColor border-neutral-200 hover:shadow-md transition flex flex-col min-h-80 rounded-main"
-                    >
-                        <div className="flex items-center justify-between mb-10">
-                            <p className="text-xl font-semibold text-mainColor">
-                                {item.name}
-                            </p>
-                            <Quote className="text-mainColor fill-mainColor" />
-                        </div>
-                        <p className="text-neutral-600 text-xl  leading-relaxed mb-4">
-                            “{item.text}”
-                        </p>
-
-                        <div className="text-sm mt-auto">
-                            <p className="text-neutral-500">
-                                {item.company}
+                {/* Row 1 — scroll kiri */}
+                <div className="flex gap-4 py-4 w-max animate-marquee">
+                    {doubled.map((client, i) => (
+                        <div
+                            key={i}
+                            className="flex shrink-0 gap-3 items-center bg-white rounded-full px-5 py-3 shadow-sm"
+                            title={client.name}
+                        >
+                            <Image
+                                src={client.logo}
+                                alt={client.name}
+                                width={80}
+                                height={40}
+                                className="object-contain h-8 w-auto"
+                            />
+                            <p className="text-sm font-medium text-neutral-700 whitespace-nowrap">
+                                {client.name}
                             </p>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+
+                {/* Row 2 — scroll kanan (berlawanan) */}
+                <div className="flex gap-4 py-4 w-max animate-marquee-reverse">
+                    {doubled.map((client, i) => (
+                        <div
+                            key={i}
+                            className="flex shrink-0 gap-3 items-center bg-white rounded-full px-5 py-3 shadow-sm"
+                            title={client.name}
+                        >
+                            <Image
+                                src={client.logo}
+                                alt={client.name}
+                                width={80}
+                                height={40}
+                                className="object-contain h-8 w-auto"
+                            />
+                            <p className="text-sm font-medium text-neutral-700 whitespace-nowrap">
+                                {client.name}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
             </div>
+
+            <section className="margin">
+                
+                <SectionTitle>{t("title_testimonials")}</SectionTitle>
+
+                {/* TESTIMONIALS */}
+                <div className="grid md:grid-cols-3 gap-6">
+                    {testimonials.map((item, i) => (
+                        <div
+                            key={i}
+                            className="p-6 border bg-otherColor border-neutral-200 hover:shadow-md transition flex flex-col min-h-80 rounded-main"
+                        >
+                            <div className="flex items-center justify-between mb-10">
+                                <p className="text-xl font-semibold text-mainColor">
+                                    {item.name}
+                                </p>
+                                <Quote className="text-mainColor fill-mainColor" />
+                            </div>
+                            <p className="text-neutral-600 text-xl leading-relaxed mb-4">
+                                "{item.text}"
+                            </p>
+                            <div className="text-sm mt-auto">
+                                <p className="text-neutral-500">{item.company}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
 
         </section>
     );

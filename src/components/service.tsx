@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
@@ -25,20 +25,49 @@ export const FeaturedService = ({ data }: {
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Detect active card saat scroll manual via IntersectionObserver
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    cardRefs.current.forEach((card, i) => {
+      if (!card) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            setActiveIndex(i);
+          }
+        },
+        {
+          root: scrollRef.current,
+          threshold: 0.5,
+        }
+      );
+
+      observer.observe(card);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, [data.items.length]);
 
   const scroll = (dir: "left" | "right") => {
     const next = dir === "right"
       ? Math.min(activeIndex + 1, data.items.length - 1)
       : Math.max(activeIndex - 1, 0);
     setActiveIndex(next);
-    const card = scrollRef.current?.children[next] as HTMLElement;
-    card?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    cardRefs.current[next]?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
   };
 
   return (
     <section className="bg-[#f0f2f5] spacing overflow-hidden">
       <div className="margin">
-
 
         {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 items-start">
@@ -96,8 +125,16 @@ export const FeaturedService = ({ data }: {
               return (
                 <div
                   key={i}
-                  onClick={() => setActiveIndex(i)}
-                  className={`snap-start shrink-0 w-65 sm:w-75 cursor-pointer group transition-all duration-300 ${isActive ? "opacity-100" : "opacity-60 hover:opacity-80"}`}
+                  ref={(el) => { cardRefs.current[i] = el; }}
+                  onClick={() => {
+                    setActiveIndex(i);
+                    cardRefs.current[i]?.scrollIntoView({
+                      behavior: "smooth",
+                      inline: "center",
+                      block: "nearest",
+                    });
+                  }}
+                  className={`snap-start shrink-0 w-95 md:w-75 cursor-pointer group transition-all duration-300 ${isActive ? "opacity-100" : "opacity-60 hover:opacity-80"}`}
                 >
                   {/* Image */}
                   <div className="relative h-115 w-full overflow-hidden rounded-2xl mb-4">
@@ -111,24 +148,17 @@ export const FeaturedService = ({ data }: {
 
                     <div className={`absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-4 transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>
                       {item.description.split("\n").map((line, idx) => (
-                        <p
-                          key={idx}
-                          className="text-white"
-                        >
-                          {line}
-                        </p>
+                        <p key={idx} className="text-white">{line}</p>
                       ))}
                       <Link href={`/service/${item.slug}`} onClick={(e) => e.stopPropagation()}>
-                        <Button 
-                        className="bg-mainColor mt-2 hover:bg-mainColor/90 text-white"
+                        <Button
+                          className="bg-mainColor mt-2 hover:bg-mainColor/90 text-white"
                           size={"sm"}
                         >
                           {data.cta_details}
                         </Button>
                       </Link>
                     </div>
-
-
                   </div>
 
                   {/* Title + CTA */}
