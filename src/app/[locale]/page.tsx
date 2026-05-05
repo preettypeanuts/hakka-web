@@ -8,16 +8,18 @@ import { WhyChooseUs } from "@/components/why-choose-us";
 import { getTranslations } from "next-intl/server";
 
 export default async function Home() {
-  const t = await getTranslations("services");
+  const t = await getTranslations("all_services");
+  const tLabel = await getTranslations("service_label");
 
   const items = t.raw("items");
 
   const data = {
-    title: t("title"),
-    subtitle: t("subtitle"),
-    cta: t("cta"),
-    wa_template: t.raw("wa_template") as string,
-    items
+    title: tLabel("title"),
+    subtitle: tLabel("subtitle"),
+    cta: tLabel("cta"),
+    wa_template: tLabel.raw("wa_template") as string,
+    items,
+    cta_details: tLabel("cta_details"),
   };
 
   return (

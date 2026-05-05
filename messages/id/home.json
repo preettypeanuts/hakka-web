@@ -29,33 +29,12 @@
       }
     ]
   },
-  "services": {
-    "title": "Layanan Unggulan",
+  "service_label": {
+    "title": "Layanan Inti",
     "subtitle": "Layanan inti kami untuk mendukung kebutuhan logistik bisnis Anda.",
     "cta": "Konsultasi",
     "wa_template": "Halo, saya tertarik dengan layanan {title}. Bisakah Anda memberikan informasi lebih lanjut?",
-    "items": [
-      {
-        "title": "Pengiriman Laut",
-        "description": "Solusi pengiriman laut untuk volume besar dengan efisiensi biaya dan jadwal yang terstruktur.",
-        "image": "https://images.unsplash.com/photo-1617952739858-28043cecdae3"
-      },
-      {
-        "title": "Pengiriman Udara",
-        "description": "Pengiriman cepat untuk kebutuhan mendesak dengan sistem pelacakan yang jelas.",
-        "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c"
-      },
-      {
-        "title": "Trucking & Antarpulau",
-        "description": "Distribusi antarkota dan antarpulau dengan armada yang terkoordinasi.",
-        "image": "https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62"
-      },
-      {
-        "title": "Pengurusan Ekspor & Impor (PPJK)",
-        "description": "Penanganan bea cukai dan dokumentasi secara profesional sesuai dengan peraturan yang berlaku.",
-        "image": "https://images.unsplash.com/photo-1601897690942-bcacbad33e55"
-      }
-    ]
+    "cta_details": "Pelajari Lebih Lanjut"
   },
   "why_choose_us": {
     "title": "Mengapa Memilih Kami",
@@ -129,10 +108,10 @@
       }
     ]
   },
-    "cta_bottom": {
-      "title": "Butuh partner logistik yang bisa diandalkan untuk jangka panjang?",
-      "desc": "Hubungi tim kami hari ini dan mulai optimalkan distribusi bisnis Anda.",
-      "primary": "Konsultasi Sekarang",
-      "secondary": "Pelajari Layanan"
+  "cta_bottom": {
+    "title": "Butuh partner logistik yang bisa diandalkan untuk jangka panjang?",
+    "desc": "Hubungi tim kami hari ini dan mulai optimalkan distribusi bisnis Anda.",
+    "primary": "Konsultasi Sekarang",
+    "secondary": "Pelajari Layanan"
   }
 }

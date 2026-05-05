@@ -3,6 +3,9 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Button } from "./ui/button";
+import { Link } from "@/i18n/navitagion";
+import { toSlug } from "@/lib/slugify";
 
 type ServiceItem = {
   title: string;
@@ -17,6 +20,7 @@ export const FeaturedService = ({ data }: {
     cta: string;
     wa_template: string;
     items: ServiceItem[];
+    cta_details: string;
   };
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,12 +39,6 @@ export const FeaturedService = ({ data }: {
     <section className="bg-[#f0f2f5] spacing overflow-hidden">
       <div className="margin">
 
-        {/* Top — label */}
-        <div className="flex justify-end mb-6">
-          <span className="text-xs tracking-widest uppercase text-neutral-400 border border-neutral-300 px-3 py-1">
-            [ {data.title} ]
-          </span>
-        </div>
 
         {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 items-start">
@@ -50,7 +48,6 @@ export const FeaturedService = ({ data }: {
             <div>
               <h2 className="text-[clamp(32px,4vw,56px)] font-bold text-neutral-900 leading-tight mb-6">
                 {data.title}
-                <span className="font-black">{data.title.split(" ").slice(2).join(" ")}</span>
               </h2>
               <p className="text-neutral-500 text-sm leading-relaxed max-w-sm">
                 {data.subtitle}
@@ -88,7 +85,7 @@ export const FeaturedService = ({ data }: {
           {/* Right — cards scroll */}
           <div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2 scrollbar-hide"
+            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2 scrollbar-hide rounded-third"
           >
             {data.items.map((item, i) => {
               const message = encodeURIComponent(
@@ -103,7 +100,7 @@ export const FeaturedService = ({ data }: {
                   className={`snap-start shrink-0 w-65 sm:w-75 cursor-pointer group transition-all duration-300 ${isActive ? "opacity-100" : "opacity-60 hover:opacity-80"}`}
                 >
                   {/* Image */}
-                  <div className="relative h-85 w-full overflow-hidden rounded-2xl mb-4">
+                  <div className="relative h-115 w-full overflow-hidden rounded-2xl mb-4">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -120,9 +117,17 @@ export const FeaturedService = ({ data }: {
                           {line}
                         </p>
                       ))}
+                      <Link href={`/service/${toSlug(item.title)}`} onClick={(e) => e.stopPropagation()}>
+                        <Button 
+                        className="bg-mainColor mt-2 hover:bg-mainColor/90 text-white"
+                          size={"sm"}
+                        >
+                          {data.cta_details}
+                        </Button>
+                      </Link>
                     </div>
 
-                    
+
                   </div>
 
                   {/* Title + CTA */}

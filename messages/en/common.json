@@ -66,6 +66,11 @@
       "about": "About",
       "contact": "Contact"
     },
+    "service_groups": {
+      "featured": "Featured",
+      "services": "Our Services",
+      "more": "More Services"
+    },
     "cta": {
       "contact": "Contact Us"
     },

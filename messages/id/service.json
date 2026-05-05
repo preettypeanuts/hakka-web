@@ -3,6 +3,9 @@
     "title": "Layanan Logistik",
     "description": "Solusi logistik menyeluruh yang mencakup pengiriman, transportasi, pergudangan, serta pengurusan kepabeanan di seluruh Indonesia."
   },
+  "group_featured": "Unggulan",
+  "group_services": "Layanan Kami",
+  "group_more": "Layanan Lainnya",
   "all_services": {
     "title": "Layanan Logistik Kami",
     "subtitle": "Beragam layanan utama kami untuk mendukung kebutuhan logistik bisnis Anda.",
@@ -10,7 +13,7 @@
       {
         "title": "Pengiriman Laut",
         "featured": true,
-        "desc": "Solusi pengiriman via laut secara menyeluruh yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
+        "description": "Solusi pengiriman via laut secara menyeluruh yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
         "benefit": "Lebih hemat biaya untuk pengiriman dalam volume besar.",
         "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
         "details": [
@@ -24,7 +27,7 @@
       {
         "title": "Pengiriman Udara",
         "featured": false,
-        "desc": "Layanan transportasi udara yang cepat dan aman untuk pengiriman bernilai tinggi dan sensitif waktu.",
+        "description": "Layanan transportasi udara yang cepat dan aman untuk pengiriman bernilai tinggi dan sensitif waktu.",
         "benefit": "Waktu pengiriman lebih cepat dengan tingkat keamanan tinggi.",
         "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
         "details": [
@@ -38,7 +41,7 @@
       {
         "title": "Penanganan Ekspor & Impor",
         "featured": true,
-        "desc": "Dukungan lengkap untuk proses ekspor dan impor, termasuk pengurusan dokumen dan kepatuhan regulasi.",
+        "description": "Dukungan lengkap untuk proses ekspor dan impor, termasuk pengurusan dokumen dan kepatuhan regulasi.",
         "benefit": "Proses clearance lebih cepat dengan risiko administrasi yang minim.",
         "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
         "details": [
@@ -52,7 +55,7 @@
       {
         "title": "Logistik Masuk & Keluar (Inbound & Outbound)",
         "featured": false,
-        "desc": "Pengelolaan arus barang masuk dan keluar secara efisien untuk mendukung kelancaran rantai pasok.",
+        "description": "Pengelolaan arus barang masuk dan keluar secara efisien untuk mendukung kelancaran rantai pasok.",
         "benefit": "Kontrol distribusi dan akurasi inventori yang lebih baik.",
         "image": "https://images.unsplash.com/photo-1553413077-190dd305871c",
         "details": [
@@ -66,7 +69,7 @@
       {
         "title": "Pengiriman Antar Pulau",
         "featured": false,
-        "desc": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas di Indonesia.",
+        "description": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas di Indonesia.",
         "benefit": "Memperluas jangkauan bisnis ke berbagai wilayah.",
         "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
         "details": [
@@ -80,7 +83,7 @@
       {
         "title": "Transportasi Darat (Trucking)",
         "featured": false,
-        "desc": "Layanan pengiriman darat dengan armada yang terkelola secara profesional dan terkoordinasi dengan baik.",
+        "description": "Layanan pengiriman darat dengan armada yang terkelola secara profesional dan terkoordinasi dengan baik.",
         "benefit": "Pengiriman fleksibel dari skala lokal hingga nasional.",
         "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
         "details": [
@@ -94,7 +97,7 @@
       {
         "title": "Pergudangan (Warehouse)",
         "featured": false,
-        "desc": "Solusi penyimpanan yang aman, rapi, dan terorganisir dengan sistem manajemen modern.",
+        "description": "Solusi penyimpanan yang aman, rapi, dan terorganisir dengan sistem manajemen modern.",
         "benefit": "Keamanan stok dan efisiensi operasional yang lebih optimal.",
         "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         "details": [
@@ -108,7 +111,7 @@
       {
         "title": "Jasa Kepabeanan (PPJK)",
         "featured": false,
-        "desc": "Layanan profesional untuk pengurusan kepabeanan guna memastikan kelancaran proses ekspor dan impor.",
+        "description": "Layanan profesional untuk pengurusan kepabeanan guna memastikan kelancaran proses ekspor dan impor.",
         "benefit": "Menghindari keterlambatan serta kendala regulasi.",
         "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
         "details": [
@@ -126,19 +129,19 @@
     "steps": [
       {
         "title": "Konsultasi Awal",
-        "desc": "Kami memahami kebutuhan logistik, tujuan bisnis, serta tantangan operasional Anda."
+        "description": "Kami memahami kebutuhan logistik, tujuan bisnis, serta tantangan operasional Anda."
       },
       {
         "title": "Perencanaan Strategis",
-        "desc": "Kami menyusun strategi logistik yang disesuaikan dengan rute dan metode paling efisien."
+        "description": "Kami menyusun strategi logistik yang disesuaikan dengan rute dan metode paling efisien."
       },
       {
         "title": "Eksekusi & Pemantauan",
-        "desc": "Kami menjalankan proses pengiriman dengan pelacakan real-time dan monitoring proaktif."
+        "description": "Kami menjalankan proses pengiriman dengan pelacakan real-time dan monitoring proaktif."
       },
       {
         "title": "Pelaporan & Evaluasi",
-        "desc": "Kami memberikan laporan performa serta rekomendasi untuk peningkatan berkelanjutan."
+        "description": "Kami memberikan laporan performa serta rekomendasi untuk peningkatan berkelanjutan."
       }
     ]
   }

@@ -46,7 +46,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
 
                 {/* Breadcrumb */}
-                <div className="absolute top-20 md:top-8 left-0 right-0 margin px-3 py-1.5 bg-darkColor/50 rounded-full truncate backdrop-blur-xl">
+                <div className="absolute top-20 md:top-18 w-fit left-0 right-0 margin px-3 py-1.5 bg-darkColor/50 border border-lightColor/40 rounded-full truncate backdrop-blur-xl">
                     <div className="flex items-center gap-2 text-white/70 text-sm">
                         <Link href="/" className="hover:text-white transition">Home</Link>
                         <span>/</span>

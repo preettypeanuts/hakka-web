@@ -66,6 +66,11 @@
       "about": "Tentang Kami",
       "contact": "Kontak"
     },
+    "service_groups": {
+      "featured": "Unggulan",
+      "services": "Layanan Kami",
+      "more": "Layanan Lainnya"
+    },
     "cta": {
       "contact": "Hubungi Kami"
     },

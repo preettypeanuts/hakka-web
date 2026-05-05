@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils";
 import { locales } from "@/i18n/config";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { Navbar } from "@/components/navbar";
+
 import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navigation/Navbar";
 
 const figtree = Figtree({ subsets: ['latin'], variable: '--font-sans' });
 

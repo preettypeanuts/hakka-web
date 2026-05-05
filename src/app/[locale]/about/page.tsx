@@ -7,20 +7,13 @@ import { getTranslations } from "next-intl/server";
 
 export default async function AboutPage() {
   const t = await getTranslations("about_banner");
-  const tAboutUs = await getTranslations("about_us");
-  const tServices = await getTranslations("about_services");
-
-  const aboutUsData = {
-    eyebrow: tAboutUs("eyebrow"),
-    title: tAboutUs("title"),
-    paragraph: tAboutUs("paragraph"),
-    cta: tAboutUs("cta"),
-  };
+  const tServicesLabel = await getTranslations("about_services");
+  const tServices = await getTranslations("all_services");
 
   const servicesData = {
-    title: tServices("title"),
-    view_more: tServices("view_more"),
-    cta: tServices("cta"),
+    title: tServicesLabel("title"),
+    view_more: tServicesLabel("view_more"),
+    cta: tServicesLabel("cta"),
     items: tServices.raw("items") as {
       title: string;
       desc: string;

@@ -3,6 +3,7 @@ import { SectionTitle } from "./section-title";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navitagion";
+import { toSlug } from "@/lib/slugify";
 
 type ServiceItem = {
     title: string;
@@ -24,7 +25,7 @@ export const AboutService = ({ data }: { data: AboutServiceData }) => {
             <div className="flex items-center justify-between mb-8 margin">
                 <SectionTitle>{data.title}</SectionTitle>
                 <Link
-                    href="/services"
+                    href="/service"
                     className=""
                 >
                     <Button
@@ -37,8 +38,9 @@ export const AboutService = ({ data }: { data: AboutServiceData }) => {
 
             <div className="flex gap-3 overflow-x-auto pb-4 scrollbar-hide">
                 {data.items.map((item, i) => (
-                    <div
+                    <Link
                         key={i}
+                        href={`/service/${toSlug(item.title)}`}
                         className={`min-w-80 flex flex-col group
                             ${i === 0 && "left-margin"}
                             ${i === data.items.length - 1 && "right-margin"}
@@ -78,7 +80,7 @@ export const AboutService = ({ data }: { data: AboutServiceData }) => {
                         </div>
 
 
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>
