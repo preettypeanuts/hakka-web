@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/page-hero";
 import { ServiceCTA } from "@/components/service-cta";
 import { ServiceGrid } from "@/components/service-grid";
+import { WorkflowSection } from "@/components/workflow";
 import { getTranslations } from "next-intl/server";
 
 type ServiceItem = {
@@ -16,6 +17,7 @@ type ServiceItem = {
 export default async function ServicePage() {
   const t = await getTranslations("services_banner");
   const tService = await getTranslations("all_services");
+  const tWorkflow = await getTranslations("workflow");
 
   const dataService = {
     title: tService("title"),
@@ -32,6 +34,10 @@ export default async function ServicePage() {
       />
       <ServiceGrid {...dataService} />
       <ServiceCTA />
+      <WorkflowSection
+        title={tWorkflow("title")}
+        steps={tWorkflow.raw("steps")}
+      />
     </>
   );
 }

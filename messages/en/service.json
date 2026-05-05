@@ -137,19 +137,23 @@
     "steps": [
       {
         "title": "Initial Consultation",
-        "description": "We understand your logistics requirements, business goals, and operational challenges."
+        "description": "We understand your logistics requirements, business goals, and operational challenges.",
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978"
       },
       {
         "title": "Strategic Planning",
-        "description": "We design tailored logistics strategies with the most efficient routes and methods."
+        "description": "We design tailored logistics strategies with the most efficient routes and methods.",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
       },
       {
         "title": "Execution & Monitoring",
-        "description": "We execute shipments with real-time tracking and proactive monitoring."
+        "description": "We execute shipments with real-time tracking and proactive monitoring.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
         "title": "Reporting & Evaluation",
-        "description": "We provide performance insights and continuous improvement recommendations."
+        "description": "We provide performance insights and continuous improvement recommendations.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
       }
     ]
   }
