@@ -26,7 +26,7 @@ export const WorkflowSection = ({ title, steps }: Props) => {
                 <div className="relative space-y-20">
 
                     {/* vertical line */}
-                    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-neutral-200 -translate-x-1/2" />
+                    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-neutral-200 -translate-x-1/2" />
 
                     {steps.map((step, i) => {
                         const isLeft = i % 2 === 0;
@@ -38,7 +38,7 @@ export const WorkflowSection = ({ title, steps }: Props) => {
                             >
                                 {/* LEFT */}
                                 <div className={`${isLeft ? "md:order-1" : "md:order-2"}`}>
-                                    <div className="relative w-full h-[260px] rounded-2xl overflow-hidden shadow-sm">
+                                    <div className="relative w-full h-65 rounded-2xl overflow-hidden shadow-sm">
                                         <Image
                                             src={`${step.image}?auto=format&fit=crop&w=800&q=80`}
                                             alt={step.title}

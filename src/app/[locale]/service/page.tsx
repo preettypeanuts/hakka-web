@@ -33,11 +33,11 @@ export default async function ServicePage() {
         image={t("image")}
       />
       <ServiceGrid {...dataService} />
-      <ServiceCTA />
       <WorkflowSection
         title={tWorkflow("title")}
         steps={tWorkflow.raw("steps")}
       />
+      <ServiceCTA />
     </>
   );
 }
