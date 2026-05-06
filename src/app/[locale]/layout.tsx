@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navigation/Navbar";
+import { FloatingButtons } from "@/components/floating-buttons";
 
 const figtree = Figtree({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -60,6 +61,7 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
+          <FloatingButtons />
           {children}
           <Footer />
         </NextIntlClientProvider>

@@ -99,5 +99,8 @@
     "legal": {
       "copyright": "© 2026 Hakka Hydro Tirta. All rights reserved."
     }
+  },
+  "floating_buttons": {
+    "cta": "Chat Us Now!"
   }
 }
