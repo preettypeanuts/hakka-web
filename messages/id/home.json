@@ -57,57 +57,6 @@
       }
     ]
   },
-  "social_proof": {
-    "title": "Clients & Partners",
-    "clients": [
-      {
-        "name": "PT Suzuki Indomobil Motor",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "Aditya Birla Group",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "PT Kewalram Indonesia",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "PT Embee Plumbon Tekstil",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "PT Royal Coconut",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "PT Wook Global Technology",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      },
-      {
-        "name": "PT Sasa Inti",
-        "logo": "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_640.png"
-      }
-    ],
-    "title_testimonials": "Apa Kata Klien Kami",
-    "testimonials": [
-      {
-        "name": "Budi Santoso",
-        "company": "PT Suzuki Indomobil Motor",
-        "text": "The Hakka Hydro Tirta team is very responsive and understands our operational needs. Logistics became much more structured."
-      },
-      {
-        "name": "Sarah Wijaya",
-        "company": "PT Sasa Inti",
-        "text": "Their system is structured and transparent, making coordination even across islands much easier."
-      },
-      {
-        "name": "Rina Setiawan",
-        "company": "PT Embee Plumbon Tekstil",
-        "text": "We are very helped with their end-to-end solutions, from planning to execution everything is handled well."
-      }
-    ]
-  },
   "cta_bottom": {
     "title": "Butuh partner logistik yang bisa diandalkan untuk jangka panjang?",
     "desc": "Hubungi tim kami hari ini dan mulai optimalkan distribusi bisnis Anda.",

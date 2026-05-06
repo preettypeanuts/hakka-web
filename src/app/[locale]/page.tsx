@@ -5,6 +5,7 @@ import { FeaturedService } from "@/components/service";
 import { SocialProof } from "@/components/social-proof";
 import { OriginSection } from "@/components/the-origin";
 import { WhyChooseUs } from "@/components/why-choose-us";
+import { Reveal } from "@/components/animate-reveal";
 import { getTranslations } from "next-intl/server";
 
 export default async function Home() {
@@ -25,11 +26,27 @@ export default async function Home() {
   return (
     <>
       <HeroHome />
-      <OriginSection />
-      <Badges />
-      <FeaturedService data={data} />
-      <WhyChooseUs />
-      <SocialProof />
+
+      <Reveal variant="fade-up" delay={200}>
+        <OriginSection />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <Badges />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <FeaturedService data={data} />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <WhyChooseUs />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <SocialProof />
+      </Reveal>
+
       <CtaBottom />
     </>
   );

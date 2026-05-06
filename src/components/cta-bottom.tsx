@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "./ui/button";
+import { Reveal } from "./animate-reveal";
 
 export const CtaBottom = () => {
   const t = useTranslations("cta_bottom");
@@ -7,7 +8,7 @@ export const CtaBottom = () => {
   return (
     <section className="relative overflow-hidden">
 
-      {/* Desktop: parallax fixed, Mobile: normal cover (fixed tidak support di iOS) */}
+      {/* Parallax bg — tidak disentuh Reveal sama sekali */}
       <div
         className="absolute inset-0 bg-cover bg-center md:bg-fixed"
         style={{
@@ -18,7 +19,8 @@ export const CtaBottom = () => {
       <div className="absolute inset-0 bg-black/15" />
 
       <div className="relative margin spacing text-white h-140 flex items-center justify-center">
-        <div className="text-center">
+        {/* Reveal hanya membungkus konten, bukan section/background */}
+        <Reveal variant="fade-up" className="text-center">
           <h2 className="text-2xl md:text-4xl font-semibold leading-snug mb-4">
             {t("title")}
           </h2>
@@ -33,7 +35,7 @@ export const CtaBottom = () => {
               {t("secondary")}
             </Button>
           </div>
-        </div>
+        </Reveal>
       </div>
 
     </section>

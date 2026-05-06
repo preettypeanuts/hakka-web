@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/animate-reveal";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCTA } from "@/components/service-cta";
 import { ServiceGrid } from "@/components/service-grid";
@@ -32,12 +33,20 @@ export default async function ServicePage() {
         subtitle={t("subtitle")}
         image={t("image")}
       />
-      <ServiceGrid {...dataService} />
-      <WorkflowSection
-        title={tWorkflow("title")}
-        steps={tWorkflow.raw("steps")}
-      />
-      <ServiceCTA />
+      <Reveal variant="fade-up" delay={200}>
+        <ServiceGrid {...dataService} />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={200}>
+        <WorkflowSection
+          title={tWorkflow("title")}
+          steps={tWorkflow.raw("steps")}
+        />
+      </Reveal>
+      
+      <Reveal variant="fade-up" delay={200}>
+        <ServiceCTA />
+      </Reveal>
     </>
   );
 }

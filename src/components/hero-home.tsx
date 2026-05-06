@@ -27,11 +27,12 @@ export const HeroHome = () => {
                             font-semibold text-white
                             max-w-xs md:max-w-xl lg:max-w-3xl
                             tracking-tight
+                            opacity-0 animate-fade-up-in
                         ">
                             {t("title")}
                         </h1>
 
-                        <div className="flex flex-row gap-2 md:gap-3">
+                        <div className="flex flex-row gap-2 md:gap-3 opacity-0 animate-fade-up-in-200">
                             <Button
                                 size="sm"
                                 className="bg-white text-primary hover:bg-neutral-100 md:text-base md:px-6 md:py-5"
@@ -54,6 +55,7 @@ export const HeroHome = () => {
                         text-sm md:text-lg
                         tracking-wide font-medium
                         max-w-sm md:max-w-2xl
+                        opacity-0 animate-fade-up-in-400
                     ">
                         {t("desc")}
                     </h2>

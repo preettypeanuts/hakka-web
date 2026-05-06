@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/animate-reveal";
 import { ContactForm } from "@/components/contact-form";
 import { ContactList } from "@/components/contact-list";
 import { PageHero } from "@/components/page-hero";
@@ -38,8 +39,13 @@ export default async function ContactPage() {
         image={t("image")}
       />
 
-      <ContactList />
-      <ContactForm data={formData} />
+      <Reveal variant="fade-up" delay={200}>
+        <ContactList />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={200}>
+        <ContactForm data={formData} />
+      </Reveal>
     </>
   );
 }

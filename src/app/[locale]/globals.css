@@ -214,9 +214,32 @@ body {
 }
 
 @utility animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
 @utility animate-marquee-reverse {
-  animation: marquee 30s linear infinite reverse;
+  animation: marquee 40s linear infinite reverse;
+}
+
+@utility animate-fade-up-in {
+  animation: fadeUpIn 0.7s ease forwards;
+}
+
+@utility animate-fade-up-in-200 {
+  animation: fadeUpIn 0.7s ease 200ms forwards;
+}
+
+@utility animate-fade-up-in-400 {
+  animation: fadeUpIn 0.7s ease 400ms forwards;
+}
+
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

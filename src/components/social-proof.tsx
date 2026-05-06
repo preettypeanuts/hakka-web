@@ -5,7 +5,7 @@ import { SectionTitle } from "./section-title";
 
 type Client = {
     name: string;
-    logo: string;
+    logo: string | null;
 };
 
 type Testimonial = {
@@ -15,16 +15,16 @@ type Testimonial = {
 };
 
 export const SocialProof = () => {
-    const t = useTranslations("social_proof");
+    const t = useTranslations("client");
 
-    const clients = t.raw("clients") as Client[];
+    const clients = (t.raw("items") as Client[]).filter((c) => c.logo);
     const testimonials = t.raw("testimonials") as Testimonial[];
 
     // Duplicate untuk infinite loop seamless
     const doubled = [...clients, ...clients];
 
     return (
-        <section className=" spacing">
+        <section className="spacing">
 
             {/* Title */}
             <div className="margin">
@@ -43,13 +43,13 @@ export const SocialProof = () => {
                             title={client.name}
                         >
                             <Image
-                                src={client.logo}
+                                src={client.logo!}
                                 alt={client.name}
                                 width={80}
                                 height={40}
-                                className="object-contain h-8 w-auto"
+                                className="object-contain h-25 rounded-full w-auto"
                             />
-                            <p className="text-sm font-medium text-neutral-700 whitespace-nowrap">
+                            <p className="text-lg font-medium text-neutral-700 whitespace-nowrap">
                                 {client.name}
                             </p>
                         </div>
@@ -65,13 +65,13 @@ export const SocialProof = () => {
                             title={client.name}
                         >
                             <Image
-                                src={client.logo}
+                                src={client.logo!}
                                 alt={client.name}
                                 width={80}
                                 height={40}
-                                className="object-contain h-8 w-auto"
+                                className="object-contain h-25 rounded-full w-auto"
                             />
-                            <p className="text-sm font-medium text-neutral-700 whitespace-nowrap">
+                            <p className="text-lg font-medium text-neutral-700 whitespace-nowrap">
                                 {client.name}
                             </p>
                         </div>
@@ -81,8 +81,8 @@ export const SocialProof = () => {
             </div>
 
             <section className="margin">
-                
-                <SectionTitle>{t("title_testimonials")}</SectionTitle>
+
+                <SectionTitle>{t("description")}</SectionTitle>
 
                 {/* TESTIMONIALS */}
                 <div className="grid md:grid-cols-3 gap-6">
@@ -107,7 +107,6 @@ export const SocialProof = () => {
                     ))}
                 </div>
             </section>
-
 
         </section>
     );

@@ -1,0 +1,85 @@
+{
+    "client": {
+        "title": "Our Clients",
+        "description": "Companies that trust our services",
+        "testimonials": [
+            {
+                "name": "Budi Santoso",
+                "company": "PT Suzuki Indomobil Motor",
+                "text": "The Hakka Hydro Tirta team is very responsive and understands our operational needs. Logistics became much more structured."
+            },
+            {
+                "name": "Sarah Wijaya",
+                "company": "PT Sasa Inti",
+                "text": "Their system is structured and transparent, making coordination even across islands much easier."
+            },
+            {
+                "name": "Rina Setiawan",
+                "company": "PT Embee Plumbon Tekstil",
+                "text": "We are very helped with their end-to-end solutions, from planning to execution everything is handled well."
+            }
+        ],
+        "items": [
+            {
+                "name": "PT Wook Global Technology",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056871/PT._WOOK_GLOBAL_TECHNOLOGY_16_11zon_x9ufjj.webp"
+            },
+            {
+                "name": "PT Tansri Gani",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056871/PT._TANSRI_GANI_15_11zon_bv97f4.webp"
+            },
+            {
+                "name": "PT Suzuki Indomobil Motor",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056870/PT._SUZUKI_INDOMOBIL_MOTOR_14_11zon_awbwtr.webp"
+            },
+            {
+                "name": "PT Shei Tai Industrial",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056869/PT._SHEI_TAI_INDUSTRIAL_13_11zon_ynewqf.webp"
+            },
+            {
+                "name": "PT Sasa Inti",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056869/PT._SASA_INTI_12_11zon_obvqdj.webp"
+            },
+            {
+                "name": "PT Royal Coconut",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056868/PT._ROYAL_COCONUT_11_11zon_cx7hmg.webp"
+            },
+            {
+                "name": "PT Porto Indonesia Sejahtera",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056868/PT._PORTO_INDONESIA_SEJAHTERA_10_11zon_hlqpov.webp"
+            },
+            {
+                "name": "PT Kewalram Indonesia",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056867/PT._KEWALRAM_INDONESIA_9_11zon_fzt272.webp"
+            },
+            {
+                "name": "PT Geo Tehnologi Moradez",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056867/PT._GEO_TEHNOLOGI_MORADEZ_7_11zon_xw97em.webp"
+            },
+            {
+                "name": "PT Kebun Tebu Mas",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056867/PT._KEBUN_TEBU_MAS_8_11zon_xluoxu.webp"
+            },
+            {
+                "name": "PT Embee Plumbon Tekstil",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056866/PT._EMBEE_PLUMBON_TEKSTIL_6_11zon_bwewon.webp"
+            },
+            {
+                "name": "PT Cipta Total Solusindo",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056866/PT._CIPTA_TOTAL_SOLUSINDO_4_11zon_u2pmic.webp"
+            },
+            {
+                "name": "CV GL International",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056866/CV._GL_INTERNATIONAL_2_11zon_iuygnv.webp"
+            },
+            {
+                "name": "PT Bumiputra Manufaktur Teknologi",
+                "logo": "https://res.cloudinary.com/di3cnyfg3/image/upload/v1778056866/PT._BUMIPUTRA_MANUFAKTUR_TEKNOLOGI_3_11zon_wpdb7j.webp"
+            },
+            {
+                "name": "PT Gading Lestari",
+                "logo": null
+            }
+        ]
+    }
+}
