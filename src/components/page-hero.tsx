@@ -1,3 +1,4 @@
+import { scrollToContent } from "@/lib/actions";
 import { Button } from "./ui/button";
 
 type PageHeroProps = {
@@ -46,6 +47,7 @@ export const PageHero = ({ title, subtitle, image }: PageHeroProps) => {
 
           <div className="md:justify-self-end md:flex md:flex-col md:justify-end opacity-0 animate-fade-up-in-400">
             <Button
+              onClick={scrollToContent}
               size={"xl"}
               className="bg-white/40 text-white border-white/50 backdrop-blur-sm hover:bg-mainColor w-fit"
             >

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import { scrollToContent, toWhatsApp } from "@/lib/actions";
+import Link from "next/link";
 
 export const HeroHome = () => {
     const t = useTranslations("hero");
@@ -33,17 +35,22 @@ export const HeroHome = () => {
                         </h1>
 
                         <div className="flex flex-row gap-2 md:gap-3 opacity-0 animate-fade-up-in-200">
-                            <Button
-                                size="sm"
-                                className="bg-white text-primary hover:bg-neutral-100 md:text-base md:px-6 md:py-5"
+                            <Link
+                                href={toWhatsApp}
                             >
-                                {t("cta_primary")}
-                            </Button>
+                                <Button
+                                    size="sm"
+                                    className="bg-white text-primary hover:bg-neutral-100 md:text-base md:px-6 md:py-5"
+                                >
+                                    {t("cta_primary")}
+                                </Button>
+                            </Link>
 
                             <Button
                                 variant="outline"
                                 size="sm"
                                 className="text-white border-white md:text-base md:px-6 md:py-5"
+                                onClick={scrollToContent}
                             >
                                 {t("cta_secondary")}
                             </Button>

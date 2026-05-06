@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import LanguageSwitcher from "../language-switcher";
 import { ChevronDown, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { toWhatsApp } from "@/lib/actions";
 
 interface NavbarBarProps {
     visible: boolean;
@@ -71,14 +72,16 @@ export const NavbarBar = ({
                 {/* Desktop Right */}
                 <div className="hidden md:flex gap-2 justify-self-end">
                     <LanguageSwitcher />
-                    <Button
-                        className={`${isScrolled || activeMega
-                            ? "bg-white text-primary hover:bg-gray-100"
-                            : "bg-mainColor"
-                            }`}
-                    >
-                        {t("cta.contact")}
-                    </Button>
+                    <Link href={toWhatsApp}>
+                        <Button
+                            className={`${isScrolled || activeMega
+                                ? "bg-white text-primary hover:bg-gray-100"
+                                : "bg-mainColor"
+                                }`}
+                        >
+                            {t("cta.contact")}
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Hamburger */}
