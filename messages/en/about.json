@@ -13,7 +13,7 @@
     "vision_title": "Vision",
     "vision": "To become a leading logistics company in Indonesia with an integrated network and excellent service standards.",
     "mission_title": "Mission",
-    "mission": [  
+    "mission": [
       "To deliver integrated logistics solutions that are efficient, measurable, and reliable.",
       "To expand and strengthen our operational network to serve logistics needs across Indonesia.",
       "To optimize processes through technology and integrated systems.",
@@ -75,6 +75,23 @@
         "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
       }
     ]
+  },
+  "branch_locations": {
+    "eyebrow": "Network Coverage",
+    "title": "Branch Locations",
+    "subtitle": "{count} offices across Indonesia",
+    "hint": "Click a point to see office details",
+    "close": "Close",
+    "stats": {
+      "head_office": "Head Office",
+      "operational": "Operational",
+      "warehouse": "Warehouse"
+    },
+    "type_labels": {
+      "head_office": "Head Office",
+      "operational": "Operational",
+      "warehouse": "Warehouse"
+    }
   },
   "values": {
     "title": "Core Values",

@@ -1,6 +1,7 @@
 import { AboutService } from "@/components/about-services";
 import { AboutUs } from "@/components/about-us";
 import { Reveal } from "@/components/animate-reveal";
+import BranchLocations from "@/components/branch-locations";
 import { PageHero } from "@/components/page-hero";
 import { ValuesSection } from "@/components/value";
 import { VisionMissionSection } from "@/components/vision-mission";
@@ -31,15 +32,23 @@ export default async function AboutPage() {
         subtitle={t("subtitle")}
         image={t("image")}
       />
+
       <Reveal variant="fade-up" delay={200}>
         <AboutUs />
       </Reveal>
+
       <Reveal variant="fade-up" delay={200}>
         <VisionMissionSection />
       </Reveal>
+
       <Reveal variant="fade-up" delay={200}>
         <AboutService data={servicesData} />
       </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <BranchLocations />
+      </Reveal>
+
       <Reveal variant="fade-up" delay={200}>
         <ValuesSection />
       </Reveal>

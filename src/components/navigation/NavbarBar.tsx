@@ -17,7 +17,7 @@ interface NavbarBarProps {
     onMobileToggle: () => void;
 }
 
-export const NavbarBar = ({
+export const  NavbarBar = ({
     visible,
     isScrolled,
     activeMega,

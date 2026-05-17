@@ -156,5 +156,12 @@
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
       }
     ]
+  },
+  "cta_service": {
+    "eyebrow": "Free Consultation",
+    "heading": "Not sure which service fits your needs?",
+    "description": "Our logistics team is ready to assess your shipment requirements and recommend the most efficient solution — at no cost.",
+    "primaryButton": "Talk to Our Team",
+    "secondaryButton": "Chat via WhatsApp"
   }
 }

@@ -156,5 +156,12 @@
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
       }
     ]
+  },
+  "cta_service": {
+    "eyebrow": "Konsultasi Gratis",
+    "heading": "Masih bingung layanan mana yang cocok untuk kebutuhan Anda?",
+    "description": "Tim logistik kami siap membantu menganalisis kebutuhan pengiriman Anda dan merekomendasikan solusi paling efisien tanpa biaya.",
+    "primaryButton": "Hubungi Tim Kami",
+    "secondaryButton": "Chat via WhatsApp"
   }
 }

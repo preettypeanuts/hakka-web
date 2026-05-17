@@ -7,6 +7,7 @@ import { OriginSection } from "@/components/the-origin";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { Reveal } from "@/components/animate-reveal";
 import { getTranslations } from "next-intl/server";
+import BranchLocations from "@/components/branch-locations";
 
 export default async function Home() {
   const t = await getTranslations("all_services");
@@ -37,6 +38,10 @@ export default async function Home() {
 
       <Reveal variant="fade-up" delay={300}>
         <FeaturedService data={data} />
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <BranchLocations />
       </Reveal>
 
       <Reveal variant="fade-up" delay={300}>

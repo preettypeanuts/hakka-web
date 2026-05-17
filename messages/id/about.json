@@ -76,6 +76,23 @@
             }
         ]
     },
+    "branch_locations": {
+        "eyebrow": "Jaringan Kami",
+        "title": "Lokasi Cabang",
+        "subtitle": "{count} kantor di seluruh Indonesia",
+        "hint": "Klik titik untuk melihat detail kantor",
+        "close": "Tutup",
+        "stats": {
+            "head_office": "Kantor Pusat",
+            "operational": "Operasional",
+            "warehouse": "Gudang"
+        },
+        "type_labels": {
+            "head_office": "Kantor Pusat",
+            "operational": "Operasional",
+            "warehouse": "Gudang"
+        }
+    },
     "values": {
         "title": "Nilai Perusahaan",
         "items": [
