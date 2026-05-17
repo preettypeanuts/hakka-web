@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
 import { Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { MegaMenuServiceCard } from "./MegaMenuServiceCard";

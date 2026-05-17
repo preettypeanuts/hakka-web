@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 import Image from "next/image";
@@ -9,7 +9,8 @@ export const Footer = () => {
     const navLinks = [
         { href: "/", label: t("navigation.home") },
         { href: "/about", label: t("navigation.about") },
-        { href: "/services", label: t("navigation.services") },
+        { href: "/service", label: t("navigation.services") },
+        { href: "/portfolio", label: t("navigation.portfolio") },
         { href: "/contact", label: t("navigation.contact") },
     ];
     

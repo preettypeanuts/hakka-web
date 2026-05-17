@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
 import { getNavbarIcon } from "./getNavbarIcon";
 
 interface ServiceItem {

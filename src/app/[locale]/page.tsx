@@ -6,11 +6,29 @@ import { SocialProof } from "@/components/social-proof";
 import { OriginSection } from "@/components/the-origin";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { Reveal } from "@/components/animate-reveal";
+import { createPageMetadata } from "@/lib/metadata";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 import BranchLocations from "@/components/branch-locations";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta_home" });
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+    path: "",
+  });
+}
+
 export default async function Home() {
-  const t = await getTranslations("all_services");
+  const t = await getTranslations("all_services"); 
   const tLabel = await getTranslations("service_label");
 
   const items = t.raw("items");

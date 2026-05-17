@@ -3,17 +3,26 @@ import { PageHero } from "@/components/page-hero";
 import { ServiceCTA } from "@/components/service-cta";
 import { ServiceGrid } from "@/components/service-grid";
 import { WorkflowSection } from "@/components/workflow";
+import { createPageMetadata } from "@/lib/metadata";
+import type { ServiceItem } from "@/lib/services";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 
-type ServiceItem = {
-  title: string;
-  desc: string;
-  benefit: string;
-  image: string;
-  details: string[];
-  featured: boolean;
-  slug: string;
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta_service" });
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+    path: "/service",
+  });
+}
 
 export default async function ServicePage() {
   const t = await getTranslations("services_banner");

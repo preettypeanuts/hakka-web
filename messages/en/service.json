@@ -1,5 +1,5 @@
 {
-  "seo": {
+  "meta_service": {
     "title": "Logistics Services",
     "description": "Comprehensive logistics solutions covering freight, transportation, warehousing, and customs handling across Indonesia."
   },
@@ -16,7 +16,7 @@
         "featured": true,
         "description": "End-to-end ocean freight solutions designed for large-scale and long-distance shipments.",
         "benefit": "More cost-efficient for high-volume cargo.",
-        "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
+        "image": "https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Full Container Load (FCL) and Less than Container Load (LCL) options",
           "Optimized route and vessel scheduling",
@@ -31,7 +31,7 @@
         "featured": false,
         "description": "Fast and secure air transportation for time-sensitive and high-value shipments.",
         "benefit": "Shorter lead time with enhanced cargo security.",
-        "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
+        "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Priority and express shipment handling",
           "Global airline network access",
@@ -46,7 +46,7 @@
         "featured": true,
         "description": "Comprehensive support for export and import processes, including documentation and compliance.",
         "benefit": "Faster clearance with minimized administrative risk.",
-        "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
+        "image": "https://images.unsplash.com/photo-1605752995290-dde649b8da06?q=80&w=1578&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Complete documentation management",
           "Customs clearance coordination",
@@ -76,7 +76,7 @@
         "featured": false,
         "description": "Reliable inter-island distribution services supported by an extensive logistics network.",
         "benefit": "Expand your business reach across regions.",
-        "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
+        "image": "https://images.unsplash.com/photo-1678182451047-196f22a4143e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Nationwide island coverage",
           "Flexible shipping schedules",
@@ -91,7 +91,7 @@
         "featured": false,
         "description": "Land transportation services with a well-managed and coordinated fleet.",
         "benefit": "Flexible delivery from local to nationwide scale.",
-        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+        "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Dedicated and shared trucking options",
           "Fleet monitoring and coordination",
@@ -156,6 +156,20 @@
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
       }
     ]
+  },
+  "service_detail": {
+    "breadcrumb_home": "Home",
+    "breadcrumb_services": "Services",
+    "eyebrow": "Our Service",
+    "overview": "Overview",
+    "included": "What's Included",
+    "key_benefit": "Key Benefit",
+    "sidebar_title": "Interested in this service?",
+    "sidebar_desc": "Contact our team for a free consultation tailored to your logistics needs.",
+    "quote_cta": "Get a Free Quote",
+    "whatsapp_cta": "Chat via WhatsApp",
+    "related_title": "Other Services",
+    "explore": "Explore →"
   },
   "cta_service": {
     "eyebrow": "Free Consultation",

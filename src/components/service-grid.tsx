@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
 
 type ServiceItem = {
     title: string;
-    desc: string;
+    description: string;
     benefit: string;
     image: string;
     details?: string[];
@@ -65,7 +65,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                                 {item.title}
                             </h3>
                             <p className="text-neutral-600 leading-relaxed mb-4 flex-1">
-                                {item.desc}
+                                {item.description}
                             </p>
 
                             {item.details && (
@@ -120,7 +120,7 @@ export const ServiceGrid = ({ title, subtitle, items }: Props) => {
                             </h3>
 
                             <p className="text-sm text-neutral-600 leading-relaxed mb-4 flex-1">
-                                {item.desc}
+                                {item.description}
                             </p>
 
                             {/* Details — show first 3 only */}

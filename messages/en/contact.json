@@ -1,5 +1,5 @@
 {
-    "seo": {
+    "meta_contact": {
         "title": "Contact Us",
         "description": "Discuss your logistics needs with our professional team today."
     },
@@ -22,27 +22,34 @@
         "eyebrow": "Contact Us",
         "title": "Let’s Move Your Business Forward",
         "description": "Tell us what you need, and our team will craft the most efficient logistics solution tailored to your business.",
-        "fields": [
-            "Full Name",
-            "Company Name",
-            "Email",
-            "WhatsApp Number",
-            "Required Service",
-            "Project Description"
+        "field_items": [
+            { "key": "fullName", "label": "Full Name", "type": "text" },
+            { "key": "company", "label": "Company Name", "type": "text" },
+            { "key": "email", "label": "Email", "type": "email" },
+            { "key": "whatsapp", "label": "WhatsApp Number", "type": "tel" },
+            { "key": "service", "label": "Required Service", "type": "text" },
+            { "key": "description", "label": "Project Description", "type": "textarea" }
         ],
         "placeholders": {
-            "Full Name": "Enter your full name",
-            "Company Name": "Enter your company name",
-            "Email": "Enter your email address",
-            "WhatsApp Number": "Enter your WhatsApp number",
-            "Required Service": "What service do you need?",
-            "Project Description": "Tell us about your project..."
+            "fullName": "Enter your full name",
+            "company": "Enter your company name",
+            "email": "Enter your email address",
+            "whatsapp": "Enter your WhatsApp number",
+            "service": "What service do you need?",
+            "description": "Tell us about your project..."
         },
         "helper": {
-            "Email": "We’ll never share your email."
+            "email": "We'll never share your email."
         },
         "cta": "Send Message",
-        "bottom_note": "Response within 24 hours • Professional consultation • No obligation"
+        "sending": "Sending...",
+        "bottom_note": "Response within 24 hours • Professional consultation • No obligation",
+        "status": {
+            "success": "Thank you! Your message has been sent. Please check your email for a confirmation.",
+            "error": "Something went wrong. Please try again or contact us via WhatsApp.",
+            "required": "Please fill in all required fields.",
+            "invalid_email": "Please enter a valid email address."
+        }
     },
     "faq": [
         {

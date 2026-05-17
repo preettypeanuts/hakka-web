@@ -1,10 +1,16 @@
 {
-  "seo": {
+  "meta_portfolio": {
     "title": "Clients & Portfolio | Hakka Hydro Tirta",
     "description": "Trusted by national and international companies across multiple industries."
   },
 
+  "portfolio_banner": {
+    "title": "Clients & Portfolio",
+    "subtitle": "Trusted by national and international companies across multiple industries.",
+    "image": "https://images.unsplash.com/photo-1521737711862-e3b97375f902"
+  },
   "clients": {
+    "title": "Our Clients",
     "categories": [
       {
         "name": "Manufacturing",
@@ -31,8 +37,11 @@
 
   "case_study": {
     "title": "National Distribution Optimization for FMCG Company",
+    "challenge_label": "Challenge",
     "challenge": "The client faced inconsistent inter-island delivery delays and unstable logistics costs.",
+    "solution_label": "Solution",
     "solution": "We designed an integrated distribution system combining sea freight and trucking with route optimization.",
+    "result_label": "Results",
     "result": [
       "18% reduction in logistics costs",
       "25% faster delivery time",

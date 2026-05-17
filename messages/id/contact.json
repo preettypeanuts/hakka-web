@@ -1,5 +1,5 @@
 {
-    "seo": {
+    "meta_contact": {
         "title": "Hubungi Kami",
         "description": "Diskusikan kebutuhan logistik Anda."
     },
@@ -22,27 +22,34 @@
         "eyebrow": "Kontak",
         "title": "Mari Dorong Bisnis Anda Lebih Maju",
         "description": "Ceritakan kebutuhan Anda, dan tim kami akan menyiapkan solusi logistik yang paling efisien untuk bisnis Anda.",
-        "fields": [
-            "Nama Lengkap",
-            "Nama Perusahaan",
-            "Email",
-            "Nomor WhatsApp",
-            "Layanan yang Dibutuhkan",
-            "Deskripsi Proyek"
+        "field_items": [
+            { "key": "fullName", "label": "Nama Lengkap", "type": "text" },
+            { "key": "company", "label": "Nama Perusahaan", "type": "text" },
+            { "key": "email", "label": "Email", "type": "email" },
+            { "key": "whatsapp", "label": "Nomor WhatsApp", "type": "tel" },
+            { "key": "service", "label": "Layanan yang Dibutuhkan", "type": "text" },
+            { "key": "description", "label": "Deskripsi Proyek", "type": "textarea" }
         ],
         "placeholders": {
-            "Nama Lengkap": "Masukkan nama lengkap Anda",
-            "Nama Perusahaan": "Masukkan nama perusahaan",
-            "Email": "Masukkan alamat email",
-            "Nomor WhatsApp": "Masukkan nomor WhatsApp",
-            "Layanan yang Dibutuhkan": "Layanan apa yang Anda butuhkan?",
-            "Deskripsi Proyek": "Ceritakan kebutuhan atau proyek Anda..."
+            "fullName": "Masukkan nama lengkap Anda",
+            "company": "Masukkan nama perusahaan",
+            "email": "Masukkan alamat email",
+            "whatsapp": "Masukkan nomor WhatsApp",
+            "service": "Layanan apa yang Anda butuhkan?",
+            "description": "Ceritakan kebutuhan atau proyek Anda..."
         },
         "helper": {
-            "Email": "Kami tidak akan membagikan email Anda."
+            "email": "Kami tidak akan membagikan email Anda."
         },
         "cta": "Kirim Pesan",
-        "bottom_note": "Respon dalam 24 jam • Konsultasi profesional • Tanpa komitmen"
+        "sending": "Mengirim...",
+        "bottom_note": "Respon dalam 24 jam • Konsultasi profesional • Tanpa komitmen",
+        "status": {
+            "success": "Terima kasih! Pesan Anda telah terkirim. Silakan cek email Anda untuk konfirmasi.",
+            "error": "Terjadi kesalahan. Silakan coba lagi atau hubungi kami via WhatsApp.",
+            "required": "Mohon lengkapi semua field yang wajib diisi.",
+            "invalid_email": "Mohon masukkan alamat email yang valid."
+        }
     },
     "faq": [
         {

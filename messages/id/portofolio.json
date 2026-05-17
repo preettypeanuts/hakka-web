@@ -1,10 +1,16 @@
 {
-  "seo": {
+  "meta_portfolio": {
     "title": "Klien & Portofolio",
     "description": "Dipercaya berbagai perusahaan nasional."
   },
 
+  "portfolio_banner": {
+    "title": "Klien & Portofolio",
+    "subtitle": "Dipercaya berbagai perusahaan nasional dan internasional di berbagai industri.",
+    "image": "https://images.unsplash.com/photo-1521737711862-e3b97375f902"
+  },
   "clients": {
+    "title": "Klien Kami",
     "categories": [
       {
         "name": "Manufaktur",
@@ -19,8 +25,11 @@
 
   "case_study": {
     "title": "Optimasi Distribusi FMCG",
-    "challenge": "Keterlambatan distribusi.",
-    "solution": "Integrasi sea freight dan trucking.",
+    "challenge_label": "Tantangan",
+    "challenge": "Keterlambatan distribusi antar pulau dan biaya logistik yang tidak stabil.",
+    "solution_label": "Solusi",
+    "solution": "Integrasi sea freight dan trucking dengan optimasi rute.",
+    "result_label": "Hasil",
     "result": [
       "Biaya turun 18%",
       "Waktu lebih cepat 25%"

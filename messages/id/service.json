@@ -1,5 +1,5 @@
 {
-  "seo": {
+  "meta_service": {
     "title": "Layanan Logistik",
     "description": "Solusi logistik menyeluruh yang mencakup pengiriman, transportasi, pergudangan, serta pengurusan kepabeanan di seluruh Indonesia."
   },
@@ -16,7 +16,7 @@
         "featured": true,
         "description": "Solusi pengiriman via laut secara menyeluruh yang dirancang untuk kebutuhan skala besar dan jarak jauh.",
         "benefit": "Lebih hemat biaya untuk pengiriman dalam volume besar.",
-        "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2",
+        "image": "https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Opsi Full Container Load (FCL) dan Less than Container Load (LCL)",
           "Optimasi rute dan jadwal kapal",
@@ -31,7 +31,7 @@
         "featured": false,
         "description": "Layanan transportasi udara yang cepat dan aman untuk pengiriman bernilai tinggi dan sensitif waktu.",
         "benefit": "Waktu pengiriman lebih cepat dengan tingkat keamanan tinggi.",
-        "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59",
+        "image": "https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Penanganan pengiriman prioritas dan ekspres",
           "Akses ke jaringan maskapai global",
@@ -46,7 +46,7 @@
         "featured": true,
         "description": "Dukungan lengkap untuk proses ekspor dan impor, termasuk pengurusan dokumen dan kepatuhan regulasi.",
         "benefit": "Proses clearance lebih cepat dengan risiko administrasi yang minim.",
-        "image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55",
+        "image": "https://images.unsplash.com/photo-1605752995290-dde649b8da06?q=80&w=1578&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Pengelolaan dokumen secara menyeluruh",
           "Koordinasi proses customs clearance",
@@ -76,7 +76,7 @@
         "featured": false,
         "description": "Layanan distribusi antar pulau yang andal dengan dukungan jaringan logistik yang luas di Indonesia.",
         "benefit": "Memperluas jangkauan bisnis ke berbagai wilayah.",
-        "image": "https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2",
+        "image": "https://images.unsplash.com/photo-1678182451047-196f22a4143e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Cakupan pengiriman seluruh Indonesia",
           "Jadwal pengiriman fleksibel",
@@ -91,7 +91,7 @@
         "featured": false,
         "description": "Layanan pengiriman darat dengan armada yang terkelola secara profesional dan terkoordinasi dengan baik.",
         "benefit": "Pengiriman fleksibel dari skala lokal hingga nasional.",
-        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+        "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "details": [
           "Opsi trucking dedicated dan sharing",
           "Monitoring dan koordinasi armada",
@@ -156,6 +156,20 @@
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
       }
     ]
+  },
+  "service_detail": {
+    "breadcrumb_home": "Beranda",
+    "breadcrumb_services": "Layanan",
+    "eyebrow": "Layanan Kami",
+    "overview": "Ringkasan",
+    "included": "Yang Termasuk",
+    "key_benefit": "Manfaat Utama",
+    "sidebar_title": "Tertarik dengan layanan ini?",
+    "sidebar_desc": "Hubungi tim kami untuk konsultasi gratis yang disesuaikan dengan kebutuhan logistik Anda.",
+    "quote_cta": "Minta Penawaran Gratis",
+    "whatsapp_cta": "Chat via WhatsApp",
+    "related_title": "Layanan Lainnya",
+    "explore": "Jelajahi →"
   },
   "cta_service": {
     "eyebrow": "Konsultasi Gratis",

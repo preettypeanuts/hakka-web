@@ -1,4 +1,8 @@
 {
+  "site": {
+    "defaultTitle": "PT Hakka Hydro Tirta | Integrated Logistics Indonesia",
+    "defaultDescription": "Integrated logistics solutions across Indonesia — sea freight, air freight, trucking, warehousing, and customs clearance."
+  },
   "navbar": {
     "menu": {
       "home": "Home",
@@ -88,6 +92,7 @@
       "home": "Home",
       "about": "About",
       "services": "Services",
+      "portfolio": "Portfolio",
       "contact": "Contact"
     },
     "contact": {

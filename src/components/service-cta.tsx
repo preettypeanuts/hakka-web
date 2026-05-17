@@ -1,4 +1,5 @@
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
+import { whatsAppUrl } from "@/lib/whatsapp";
 import { useTranslations } from "next-intl";
 
 export const ServiceCTA = () => {
@@ -41,8 +42,8 @@ export const ServiceCTA = () => {
                             <span>→</span>
                         </Link>
 
-                        <Link
-                            href="https://wa.me/62XXXXXXXXXX"
+                        <a
+                            href={whatsAppUrl()}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -58,7 +59,7 @@ export const ServiceCTA = () => {
                             </svg>
 
                             {t("secondaryButton")}
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

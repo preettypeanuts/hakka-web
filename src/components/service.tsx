@@ -4,7 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
+import { whatsAppUrl } from "@/lib/whatsapp";
 
 type ServiceItem = {
   title: string;
@@ -167,7 +168,7 @@ export const FeaturedService = ({ data }: {
                       {item.title}
                     </h3>
                     <a
-                      href={`https://wa.me/6281292749915?text=${message}`}
+                      href={whatsAppUrl(message)}
                       onClick={(e) => e.stopPropagation()}
                       className="text-[11px] uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors"
                     >

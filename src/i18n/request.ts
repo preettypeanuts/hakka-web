@@ -20,6 +20,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
     .default;
   const client = (await import(`../../messages/${currentLocale}/client.json`))
     .default;
+  const portofolio = (
+    await import(`../../messages/${currentLocale}/portofolio.json`)
+  ).default;
 
   return {
     locale: currentLocale,
@@ -31,6 +34,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...contact,
       ...service,
       ...client,
+      ...portofolio,
     },
   };
 });

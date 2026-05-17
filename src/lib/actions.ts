@@ -1,9 +1,5 @@
-"use client"
-
-const DEFAULT_WA_NUMBER = "6282211116875"; 
-
-export const toWhatsApp = `https://api.whatsapp.com/send?phone=${DEFAULT_WA_NUMBER}`
+"use client";
 
 export const scrollToContent = () => {
-    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
 };

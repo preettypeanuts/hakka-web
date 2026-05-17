@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { toWhatsApp } from "@/lib/actions";
+import { whatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "next-intl";
 
 export const FloatingButtons = () => {
@@ -74,7 +74,7 @@ export const FloatingButtons = () => {
                     <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-40" />
                     <a
 
-                        href={toWhatsApp}
+                        href={whatsAppLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Chat via WhatsApp"

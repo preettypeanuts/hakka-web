@@ -2,11 +2,11 @@ import Image from "next/image";
 import { SectionTitle } from "./section-title";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "@/i18n/navitagion";
+import { Link } from "@/i18n/navigation";
 
 type ServiceItem = {
     title: string;
-    desc: string;
+    description: string;
     benefit: string;
     image: string;
     slug: string;
@@ -66,7 +66,7 @@ export const AboutService = ({ data }: { data: AboutServiceData }) => {
                                     {item.title}
                                 </h3>
                                 <p className="text-sm text-neutral-600 leading-relaxed mb-3">
-                                    {item.desc}
+                                    {item.description}
                                 </p>
                             </div>
                             <div className="bg-lightColor/80 mt-5 p-4 rounded-third">

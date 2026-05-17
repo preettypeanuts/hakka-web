@@ -1,155 +1,24 @@
 "use client";
 
+import {
+  branchLocations,
+  type BranchLocation,
+} from "@/components/branch-locations-data";
+import dynamic from "next/dynamic";
 import { useLocale } from "next-intl";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-interface Address {
-    building?: string;
-    street: string;
-    district?: string;
-    city: string;
-    province?: string;
-    postalCode: string;
-    country: string;
-}
-
-interface BranchLocation {
-    city: string;
-    type: "Head Office" | "Operational Office" | "Warehouse";
-    address: Address;
-    lat: number;
-    lng: number;
-}
-
-// ─── Data ─────────────────────────────────────────────────────────────────────
-
-export const branchLocations: BranchLocation[] = [
-    {
-        city: "Belawan (Medan)",
-        type: "Operational Office",
-        lat: 3.7868,
-        lng: 98.6837,
-        address: {
-            street: "Complex Multatuli Indah Block E No:49",
-            city: "Kota Medan",
-            province: "Sumatera Utara",
-            postalCode: "20151",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Batam",
-        type: "Operational Office",
-        lat: 1.1301,
-        lng: 104.0529,
-        address: {
-            building: "Graha Pena Batam Lt.8 Executive Room",
-            street: "Jl. Raya Batam Centre, Teluk Tering",
-            city: "Batam Kota, Pulau Batam",
-            postalCode: "29461",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Padang",
-        type: "Operational Office",
-        lat: -0.9471,
-        lng: 100.4172,
-        address: {
-            street: "Jl. Azizi Raya Blok F No:2 Komplek Cendana Andalas",
-            city: "Kota Padang",
-            province: "Sumatera Barat",
-            postalCode: "25126",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Jakarta",
-        type: "Head Office",
-        lat: -6.1218,
-        lng: 106.7456,
-        address: {
-            building: "Rukan Golf Island Blok J No. 55-56",
-            street: "Jl. The Golf Island Boulevard, Pantai Indah Kapuk",
-            district: "RT. 01 / RW. 06, Kel. Kamal Muara, Kec. Penjaringan",
-            city: "Jakarta Utara",
-            province: "DKI Jakarta",
-            postalCode: "14470",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Semarang",
-        type: "Operational Office",
-        lat: -6.9932,
-        lng: 110.3695,
-        address: {
-            street: "Jl. Wali Songo No.60, Tugurejo, Kec. Tugu",
-            city: "Kota Semarang",
-            province: "Jawa Tengah",
-            postalCode: "50185",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Surabaya",
-        type: "Operational Office",
-        lat: -7.2128,
-        lng: 112.7341,
-        address: {
-            street: "Jl. Kalianget 10-12 Kav. A3, Perak Utara",
-            district: "Kec. Pabean Cantikan",
-            city: "Kota Surabaya",
-            province: "Jawa Timur",
-            postalCode: "60165",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Makassar",
-        type: "Operational Office",
-        lat: -5.1477,
-        lng: 119.4327,
-        address: {
-            street: "Jl. Mesjid Raya No:68",
-            district: "Kec. Bontoala",
-            city: "Kota Makassar",
-            province: "Sulawesi Selatan",
-            postalCode: "90153",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Sulawesi Selatan",
-        type: "Warehouse",
-        lat: -4.9966,
-        lng: 119.5715,
-        address: {
-            building: "Pegudangan Pattene 88",
-            street: "Cluster Green Park Blok E1 No:01, Maccini Baji",
-            city: "Maros",
-            province: "Sulawesi Selatan",
-            postalCode: "90214",
-            country: "Indonesia",
-        },
-    },
-    {
-        city: "Bitung (Manado)",
-        type: "Operational Office",
-        lat: 1.4406,
-        lng: 125.1614,
-        address: {
-            street: "Jl. Konsolidasi 9, Griya Maleosan Indah, Blok Emerald E/1",
-            district: "Kel. Paniki Bawah, Kec. Mapanget",
-            city: "Kota Manado",
-            province: "Sulawesi Utara",
-            postalCode: "95115",
-            country: "Indonesia",
-        },
-    },
-];
+const BranchMap = dynamic(
+  () => import("@/components/branch-map").then((m) => m.BranchMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="absolute inset-0 flex items-center justify-center bg-slate-100 text-slate-400 text-sm">
+        Loading map…
+      </div>
+    ),
+  },
+);
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 
@@ -182,163 +51,6 @@ const typeConfig = {
         size: 13,
     },
 } as const;
-
-// ─── Leaflet Map ──────────────────────────────────────────────────────────────
-
-function LeafletMap({
-    active,
-    onSelect,
-}: {
-    active: BranchLocation | null;
-    onSelect: (b: BranchLocation) => void;
-}) {
-    const containerRef = useRef<HTMLDivElement>(null);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const mapRef = useRef<any>(null);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const markersRef = useRef<Map<string, any>>(new Map());
-    const activeRef = useRef<BranchLocation | null>(null);
-
-    // Build SVG pin icon
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    function buildIcon(L: any, branch: BranchLocation, isActive: boolean) {
-        const cfg = typeConfig[branch.type];
-        const isHead = branch.type === "Head Office";
-        const s = isActive ? cfg.size * 1.4 : cfg.size;
-        const outerR = s;
-        const innerR = s * 0.45;
-
-        const starPath = isHead
-            ? `<polygon points="${outerR},${outerR * 0.25} ${outerR + outerR * 0.22},${outerR * 0.75} ${outerR + outerR * 0.55},${outerR * 0.75} ${outerR + outerR * 0.28},${outerR * 1.05} ${outerR + outerR * 0.38},${outerR * 1.4} ${outerR},${outerR * 1.18} ${outerR - outerR * 0.38},${outerR * 1.4} ${outerR - outerR * 0.28},${outerR * 1.05} ${outerR - outerR * 0.55},${outerR * 0.75} ${outerR - outerR * 0.22},${outerR * 0.75}" fill="white" opacity="0.9"/>`
-            : "";
-
-        const pulse = isActive
-            ? `<circle cx="${outerR}" cy="${outerR}" r="${outerR + 6}" fill="${cfg.color}" opacity="0.15">
-           <animate attributeName="r" values="${outerR + 4};${outerR + 12};${outerR + 4}" dur="2s" repeatCount="indefinite"/>
-           <animate attributeName="opacity" values="0.2;0;0.2" dur="2s" repeatCount="indefinite"/>
-         </circle>`
-            : "";
-
-        const totalSize = (outerR + 14) * 2;
-
-        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${totalSize}" height="${totalSize}" viewBox="0 0 ${totalSize} ${totalSize}">
-      ${pulse}
-      <circle cx="${totalSize / 2}" cy="${totalSize / 2}" r="${outerR + 2}" fill="${cfg.colorBorder}" opacity="0.5"/>
-      <circle cx="${totalSize / 2}" cy="${totalSize / 2}" r="${outerR}" fill="${cfg.color}"/>
-      <circle cx="${totalSize / 2}" cy="${totalSize / 2}" r="${innerR}" fill="white" opacity="0.3"/>
-      ${isHead ? `<polygon points="${Array.from({ length: 5 }, (_, i) => {
-            const angle = (i * 4 * Math.PI) / 5 - Math.PI / 2;
-            const r = outerR * 0.5;
-            return `${totalSize / 2 + r * Math.cos(angle)},${totalSize / 2 + r * Math.sin(angle)}`;
-        }).join(" ")}" fill="white" opacity="0.95"/>` : ""}
-    </svg>`;
-
-        return L.divIcon({
-            html: svg,
-            className: "",
-            iconSize: [totalSize, totalSize],
-            iconAnchor: [totalSize / 2, totalSize / 2],
-        });
-    }
-
-    useEffect(() => {
-        if (!containerRef.current || mapRef.current) return;
-
-        let L: typeof import("leaflet");
-
-        async function initMap() {
-            // Dynamically import Leaflet (avoids SSR issues in Next.js)
-            L = (await import("leaflet")).default;
-
-            // Fix default icon path issue with webpack
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            delete (L.Icon.Default.prototype as any)._getIconUrl;
-            L.Icon.Default.mergeOptions({
-                iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-                iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-                shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-            });
-
-            const map = L.map(containerRef.current!, {
-                center: [-2.5, 118],
-                zoom: 5,
-                zoomControl: false,
-                attributionControl: true,
-                scrollWheelZoom: true,
-            });
-
-            // Zoom control top-right
-            L.control.zoom({ position: "topright" }).addTo(map);
-
-            // CartoDB Positron — clean, minimal, elegant tile layer
-            L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {
-                    attribution:
-                        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-                    subdomains: "abcd",
-                    maxZoom: 19,
-                }
-            ).addTo(map);
-
-            mapRef.current = map;
-
-            // Add markers
-            branchLocations.forEach((branch) => {
-                const isActive = activeRef.current?.city === branch.city;
-                const icon = buildIcon(L, branch, isActive);
-
-                const marker = L.marker([branch.lat, branch.lng], { icon })
-                    .addTo(map)
-                    .on("click", () => onSelect(branch));
-
-                markersRef.current.set(branch.city, { marker, L });
-            });
-        }
-
-        initMap();
-
-        return () => {
-            if (mapRef.current) {
-                mapRef.current.remove();
-                mapRef.current = null;
-                markersRef.current.clear();
-            }
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    // Update icons when active changes
-    useEffect(() => {
-        activeRef.current = active;
-        markersRef.current.forEach(({ marker, L }, city) => {
-            const branch = branchLocations.find((b) => b.city === city);
-            if (!branch) return;
-            const isActive = active?.city === city;
-            marker.setIcon(buildIcon(L, branch, isActive));
-        });
-
-        // Fly to active branch
-        if (active && mapRef.current) {
-            mapRef.current.flyTo([active.lat, active.lng], 12, {
-                duration: 1.2,
-                easeLinearity: 0.25,
-            });
-        } else if (!active && mapRef.current) {
-            mapRef.current.flyTo([-2.5, 118], 5, { duration: 1 });
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [active]);
-
-    return (
-        <div
-            ref={containerRef}
-            className="absolute inset-0 w-full h-full"
-            style={{ zIndex: 0 }}
-            aria-label="Peta lokasi kantor cabang"
-        />
-    );
-}
 
 // ─── Detail Card ──────────────────────────────────────────────────────────────
 
@@ -605,7 +317,7 @@ export default function BranchLocations() {
 
                 {/* Map */}
                 <div className="relative flex-1 order-1 lg:order-2 overflow-hidden">
-                    <LeafletMap active={active} onSelect={handleSelect} />
+                    <BranchMap active={active} onSelect={handleSelect} />
                     <DetailCard branch={active} onClose={() => setActive(null)} />
                 </div>
             </section>

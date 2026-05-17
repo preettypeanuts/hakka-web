@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Link } from "@/i18n/navitagion";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "../ui/button";
 import LanguageSwitcher from "../language-switcher";
 import { ChevronDown, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { toWhatsApp } from "@/lib/actions";
+import { whatsAppLink } from "@/lib/whatsapp";
 
 interface NavbarBarProps {
     visible: boolean;
@@ -17,7 +17,7 @@ interface NavbarBarProps {
     onMobileToggle: () => void;
 }
 
-export const  NavbarBar = ({
+export const NavbarBar = ({
     visible,
     isScrolled,
     activeMega,
@@ -26,6 +26,15 @@ export const  NavbarBar = ({
     onMobileToggle,
 }: NavbarBarProps) => {
     const t = useTranslations("navbar");
+    const pathname = usePathname();
+
+    const isActive = (path: string) => {
+        if (path === "/") return pathname === "/";
+        return pathname.startsWith(path);
+    };
+
+    const activeClass =
+        "text-white relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-white after:rounded-full";
 
     return (
         <nav
@@ -50,42 +59,68 @@ export const  NavbarBar = ({
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 text-[15px] font-medium text-white justify-self-center">
-                    <Link href="/">{t("menu.home")}</Link>
+                    <Link
+                        href="/"
+                        className={isActive("/") ? activeClass : ""}
+                    >
+                        {t("menu.home")}
+                    </Link>
 
                     {/* Services trigger */}
                     <div
                         onMouseEnter={onMegaEnter}
                         onMouseLeave={onMegaLeave}
-                        className="flex items-center gap-1 cursor-pointer"
+                        className={`flex items-center gap-1 cursor-pointer relative
+                            ${isActive("/service") ? activeClass : ""}
+                        `}
                     >
                         <span>{t("menu.services.label")}</span>
+
                         <ChevronDown
                             size={16}
-                            className={`transition-transform duration-300 ${activeMega ? "rotate-180" : ""}`}
+                            className={`transition-transform duration-300 ${
+                                activeMega ? "rotate-180" : ""
+                            }`}
                         />
                     </div>
 
-                    <Link href="/about">{t("menu.about")}</Link>
-                    <Link href="/contact">{t("menu.contact")}</Link>
+                    <Link
+                        href="/about"
+                        className={isActive("/about") ? activeClass : ""}
+                    >
+                        {t("menu.about")}
+                    </Link>
+
+                    <Link
+                        href="/contact"
+                        className={isActive("/contact") ? activeClass : ""}
+                    >
+                        {t("menu.contact")}
+                    </Link>
                 </div>
 
                 {/* Desktop Right */}
                 <div className="hidden md:flex gap-2 justify-self-end">
                     <LanguageSwitcher />
-                    <Link href={toWhatsApp}>
+
+                    <a href={whatsAppLink} target="_blank" rel="noopener noreferrer">
                         <Button
-                            className={`${isScrolled || activeMega
-                                ? "bg-white text-primary hover:bg-gray-100"
-                                : "bg-mainColor"
-                                }`}
+                            className={`${
+                                isScrolled || activeMega
+                                    ? "bg-white text-primary hover:bg-gray-100"
+                                    : "bg-mainColor"
+                            }`}
                         >
                             {t("cta.contact")}
                         </Button>
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Mobile Hamburger */}
-                <button className="md:hidden justify-self-end" onClick={onMobileToggle}>
+                <button
+                    className="md:hidden justify-self-end"
+                    onClick={onMobileToggle}
+                >
                     <div className="text-white">
                         <Menu />
                     </div>

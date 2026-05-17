@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { usePathname } from "@/i18n/navitagion";
+import { usePathname } from "@/i18n/navigation";
 import { NavbarBackdrop } from "./NavbarBackdrop";
 import { MegaMenu } from "./MegaMenu";
 import { MobileMenu } from "./MobileMenu";

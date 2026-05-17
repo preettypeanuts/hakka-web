@@ -1,4 +1,8 @@
 {
+  "site": {
+    "defaultTitle": "PT Hakka Hydro Tirta | Logistik Terintegrasi Indonesia",
+    "defaultDescription": "Solusi logistik terintegrasi di seluruh Indonesia — pengiriman laut, udara, trucking, pergudangan, dan kepabeanan."
+  },
   "navbar": {
     "menu": {
       "home": "Beranda",
@@ -88,6 +92,7 @@
       "home": "Beranda",
       "about": "Tentang Kami",
       "services": "Layanan",
+      "portfolio": "Portofolio",
       "contact": "Kontak"
     },
     "contact": {
